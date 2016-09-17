@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         if level != nil {
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "StatusViewController")
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainNavigationController")
             self.window?.rootViewController = initialViewController
 
         } else {

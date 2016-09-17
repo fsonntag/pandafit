@@ -14,13 +14,13 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
 
-    var pandaState: PandaState? {
+    var panda: Panda? {
         didSet {
-            if let pandaState = pandaState {
-                moodLabel.text = "\(pandaState.mood)".uppercased()
-                scoreLabel.text = pandaState.score.description
+            if let panda = panda {
+                moodLabel.text = "\(panda.mood)".uppercased()
+                scoreLabel.text = panda.score.description
                 
-                switch pandaState.mood {
+                switch panda.mood {
                 case .ecstatic:
                     imageView.animationImages = [UIImage(named: "ecstatic1")!, UIImage(named: "ecstatic2")!]
                 case .happy:
@@ -41,7 +41,7 @@ class StatusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pandaState = PandaState(score: 50, mood: Mood.happy)
+        self.panda = Panda(name: "Felix", score: 50, mood: Mood.happy)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

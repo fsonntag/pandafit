@@ -1,5 +1,5 @@
 //
-//  PandaState.swift
+//  Panda.swift
 //  PandaFit
 //
 //  Created by Felix Sonntag on 17/09/16.
@@ -16,12 +16,15 @@ enum Mood {
     case dying
 }
 
-class PandaState: NSObject {
+class Panda: NSObject, NSCoding {
     
+    var name: String
     var score: Int = 50
     var mood: Mood
     
-    init(score: Int) {
+    
+    init(name: String, score: Int) {
+        self.name = name
         self.score = score
         switch score {
         case let x where x < 20:
@@ -40,9 +43,25 @@ class PandaState: NSObject {
         }
     }
     
-    init(score: Int, mood: Mood) {
+    init(name: String, score: Int, mood: Mood) {
+        self.name = name
         self.score = score
         self.mood = mood
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        guard let name = aDecoder.decodeObject(forKey: "name") as? String,
+            let score = aDecoder.decodeObject(forKey: "score") as? Int
+        else {
+            return nil
+        }
+        self.init(name:name, score: score)
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(self.name, forKey: "name")
+        aCoder.encode(self.score, forKey: "score")
+        
     }
 
 }

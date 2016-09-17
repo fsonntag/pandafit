@@ -9,9 +9,9 @@
 import UIKit
 import Alamofire
 
-class PGNetworkController: NSObject {
+class PGNetworkController: NSObject {        
     
-    func getPandaState() -> PandaState {
+    func getPandaState(name: String) -> Panda {
 //        TODO update URL and parsing
         Alamofire.request("localhost:7000/getCurrentStatus").responseJSON { response in
             print(response.response) // HTTP URL response
@@ -22,7 +22,7 @@ class PGNetworkController: NSObject {
                 print("JSON: \(JSON)")
             }
         }
-        return PandaState(score: 50)
+        return Panda(name: name, score: 50)
     }
 
     func postSteps(numberSteps: Int) {

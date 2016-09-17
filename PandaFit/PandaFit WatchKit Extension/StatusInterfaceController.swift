@@ -17,14 +17,14 @@ class StatusInterfaceController: WKInterfaceController {
     @IBOutlet var moodLabel: WKInterfaceLabel!
     @IBOutlet var scoreLabel: WKInterfaceLabel!
     
-    var pandaState: PandaState? {
+    var panda: Panda? {
         didSet {
-            if let pandaState = pandaState {
-                moodLabel.setText("Panda is \(pandaState.mood)")
-                scoreLabel.setText(pandaState.score.description)
+            if let panda = panda {
+                moodLabel.setText("Panda is \(panda.mood)")
+                scoreLabel.setText(panda.score.description)
                 
                 let duration = 1.5
-                switch pandaState.mood {
+                switch panda.mood {
                 case .ecstatic:
                     image.setImageNamed("ecstatic")
                     imageBackgroundGroup.setBackgroundColor(UIColor.cyan)
@@ -49,7 +49,7 @@ class StatusInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        self.pandaState = PandaState(score: 50, mood: Mood.ecstatic)
+        self.panda = Panda(name: "Felix", score: 50, mood: Mood.ecstatic)
         // Configure interface objects here.
     }
     
