@@ -185,7 +185,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFj-d3-HAT">
                                 <state key="normal" title="Panda Friends"/>
                                 <connections>
-                                    <segue destination="Yqk-BB-69W" kind="show" id="4Ul-5D-gTV"/>
+                                    <segue destination="Kfl-I2-k35" kind="show" id="i12-pZ-H3i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -217,44 +217,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XvK-tL-Mnh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1323" y="945"/>
+            <point key="canvasLocation" x="-1124" y="945"/>
         </scene>
         <!--Your Panda Friends-->
-        <scene sceneID="Pk5-LR-AmN">
+        <scene sceneID="iaT-fT-QfT">
             <objects>
-                <viewController storyboardIdentifier="FriendsViewController" title="Your Panda Friends" id="Yqk-BB-69W" customClass="FriendsViewController" customModule="PandaFit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Your Panda Friends" id="Kfl-I2-k35" customClass="FriendsViewController" customModule="PandaFit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AEf-OY-pkg"/>
-                        <viewControllerLayoutGuide type="bottom" id="7Vu-Zr-xUy"/>
+                        <viewControllerLayoutGuide type="top" id="6iH-hL-k3f"/>
+                        <viewControllerLayoutGuide type="bottom" id="KbL-3S-cYY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fnM-GW-B51">
+                    <view key="view" contentMode="scaleToFill" id="3AV-JA-II4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xxs-2g-bOL">
-                                <frame key="frameInset" minX="16" minY="83" width="343" height="488"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uHx-Xm-ObD">
+                                <frame key="frameInset" minX="16" minY="72" width="343" height="499"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" id="cbn-Jz-p4t" customClass="FriendTableViewCell" customModule="PandaFit" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" id="hts-J5-Vto" customClass="FriendTableViewCell" customModule="PandaFit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cbn-Jz-p4t" id="7Nj-pq-fTp">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hts-J5-Vto" id="IBJ-og-Bb9">
                                             <frame key="frameInset" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry2" translatesAutoresizingMaskIntoConstraints="NO" id="m0D-S7-yx1">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="angry2" translatesAutoresizingMaskIntoConstraints="NO" id="8zQ-Kc-Yyx">
                                                     <frame key="frameInset" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Philipp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwn-ew-BdK">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Philipp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="752-mJ-xUF">
                                                     <frame key="frameInset" minX="48" minY="11" width="52" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d3-vj-zW6">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p57-Mk-7Gq">
                                                     <frame key="frameInset" minX="305" minY="8" width="30" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
@@ -264,43 +264,43 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="name" destination="Nwn-ew-BdK" id="JSL-zE-kNC"/>
-                                            <outlet property="score" destination="8d3-vj-zW6" id="Smy-R1-THG"/>
-                                            <outlet property="stateImageView" destination="m0D-S7-yx1" id="CTq-XC-Qtn"/>
+                                            <outlet property="name" destination="752-mJ-xUF" id="Gul-sA-imb"/>
+                                            <outlet property="score" destination="p57-Mk-7Gq" id="Z2E-mI-bF5"/>
+                                            <outlet property="stateImageView" destination="8zQ-Kc-Yyx" id="LoW-QE-FFo"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="fnM-GW-B51" id="Wd4-O8-gjg"/>
-                                    <outlet property="delegate" destination="fnM-GW-B51" id="38N-BV-XFz"/>
+                                    <outlet property="dataSource" destination="Kfl-I2-k35" id="cni-SI-Ryo"/>
+                                    <outlet property="delegate" destination="Kfl-I2-k35" id="Rwj-QE-QAH"/>
                                 </connections>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Friend's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-PM-em5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaU-E1-Lfq">
+                                <frame key="frameInset" minX="16" minY="617" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Panda Friend"/>
+                                <connections>
+                                    <action selector="addFriend:" destination="Kfl-I2-k35" eventType="touchUpInside" id="aOO-C8-JDI"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Friend's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-HR-1QU">
                                 <frame key="frameInset" minX="16" minY="579" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY1-5N-qFJ">
-                                <frame key="frameInset" minX="16" minY="617" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Panda Friend"/>
-                                <connections>
-                                    <action selector="addFriend:" destination="Yqk-BB-69W" eventType="touchUpInside" id="Jq7-wj-518"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="friendsTableView" destination="Xxs-2g-bOL" id="tCu-rY-2KU"/>
-                        <outlet property="nameTextField" destination="cSV-PM-em5" id="xTK-RZ-D42"/>
+                        <outlet property="friendsTableView" destination="uHx-Xm-ObD" id="awh-1C-qRU"/>
+                        <outlet property="nameTextField" destination="fmT-HR-1QU" id="IDb-Fm-Iny"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OXd-AG-bH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrB-Cm-B93" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-401" y="945"/>
+            <point key="canvasLocation" x="-382" y="945"/>
         </scene>
     </scenes>
     <resources>
