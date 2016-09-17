@@ -42,16 +42,26 @@ class PGHealthKitManager: NSObject {
     
     func retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier, completion: @escaping (_ stepRetrieved: Double) -> Void) {
         
+        let key = "\(quantityTypeIdentifier)"
+        let lastDate = UserDefaults.standard.value(forKey: key)
+        if lastDate != nil {
+            
+        } else {
+            UserDefaults.standard.set(Date(), forKey: key)
+        }
+        
         //   Define the Step Quantity Type
         let stepsCount = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
         
         //   Get the start of the day
         let calendar = Calendar.current
-        let today = Date()
-        let sevenDaysAgo = calendar.date(byAdding: .day, value: -7, to: today)
+        let now = Date()
+        
+        
+        let sevenDaysAgo = calendar.date(byAdding: .day, value: -7, to: now)
         
         //  Set the Predicates & Interval
-        let predicate = HKQuery.predicateForSamples(withStart: sevenDaysAgo, end: today, options: .strictStartDate)
+        let predicate = HKQuery.predicateForSamples(withStart: sevenDaysAgo, end: now, options: .strictStartDate)
         let interval: NSDateComponents = NSDateComponents()
         interval.day = 1
         

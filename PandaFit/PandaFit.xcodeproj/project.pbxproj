@@ -10,6 +10,7 @@
 		07DB1B7F35EB293B46BF86D6 /* Pods_PandaFit_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100A1BFEC29D10869FD8494E /* Pods_PandaFit_WatchKit_App.framework */; };
 		47D8A6FA51959841C39C090D /* Pods_PandaFit_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28236F9F0EF80AAB6F768E96 /* Pods_PandaFit_WatchKit_Extension.framework */; };
 		5C4B9AF71A85B0774E69A8E5 /* Pods_PandaFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB2AAA63B00A83D8CB4099D /* Pods_PandaFit.framework */; };
+		DC5C3B7D1D8D44B0003349E8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */; };
 		DC7A29C91D8C944C006D04E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A29C81D8C944C006D04E4 /* AppDelegate.swift */; };
 		DC7A29CB1D8C944C006D04E4 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */; };
 		DC7A29CE1D8C944C006D04E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7A29CC1D8C944C006D04E4 /* Main.storyboard */; };
@@ -31,7 +32,6 @@
 		DCE9BED41D8CC2710074A34F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE9BED01D8CC2680074A34F /* Media.xcassets */; };
 		DCE9BED61D8CC3F20074A34F /* PGNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */; };
 		DCE9BED81D8CD0A00074A34F /* LevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9BED71D8CD0A00074A34F /* LevelSelectionViewController.swift */; };
-		DCF881E91D8CE0D0000F9C76 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF881E81D8CE0D0000F9C76 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +85,7 @@
 		B59CB3E9CCAB43BAB7CE4D06 /* Pods-PandaFit WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		CEB2AAA63B00A83D8CB4099D /* Pods_PandaFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E423A337E377C69AE33C70 /* Pods-PandaFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit/Pods-PandaFit.debug.xcconfig"; sourceTree = "<group>"; };
+		DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		DC7A29C51D8C944C006D04E4 /* PandaFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7A29C81D8C944C006D04E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PGNetworkController.swift; path = ../PGNetworkController.swift; sourceTree = "<group>"; };
 		DCE9BED71D8CD0A00074A34F /* LevelSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectionViewController.swift; sourceTree = "<group>"; };
 		DCF881E71D8CE0D0000F9C76 /* PandaFit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PandaFit.entitlements; sourceTree = "<group>"; };
-		DCF881E81D8CE0D0000F9C76 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		E2A8DD603A622DEEBA1FFA92 /* Pods-PandaFit WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C4B9AF71A85B0774E69A8E5 /* Pods_PandaFit.framework in Frameworks */,
-				DCF881E91D8CE0D0000F9C76 /* HealthKit.framework in Frameworks */,
+				DC5C3B7D1D8D44B0003349E8 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +228,7 @@
 		DC7A2A061D8C98F3006D04E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DCF881E81D8CE0D0000F9C76 /* HealthKit.framework */,
+				DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */,
 				CEB2AAA63B00A83D8CB4099D /* Pods_PandaFit.framework */,
 				100A1BFEC29D10869FD8494E /* Pods_PandaFit_WatchKit_App.framework */,
 				28236F9F0EF80AAB6F768E96 /* Pods_PandaFit_WatchKit_Extension.framework */,

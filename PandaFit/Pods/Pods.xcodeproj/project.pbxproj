@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		024C9468242EFC09B5B71076D0BDABB5 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6EFA1B14F4F2AC1C907F7D8D75E2A2 /* ImageDownloader.swift */; };
+		0AB057455B06BC7DC6C015BF61552580 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C67980A1643E24DFF565CEA05A5E4A /* Foundation.framework */; };
 		0B8551E9AC828974E86D9D03A7F8BC92 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E49FAD71119F6D53CE9E24BE14BFF0F1 /* Alamofire.framework */; };
 		0C1B4E9FFB8B81E8833A3BAD537B1990 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD48160E946CF60C44697D4766239A69 /* Notifications.swift */; };
-		10B3C725C8EA8C943CDB2780CF365C13 /* Pods-PandaFit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E205D8F914391D06F6667FE9EAAA77F1 /* Pods-PandaFit-dummy.m */; };
 		12118C354EFA36292F82A8D0CFCE45B2 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C040C3370B9A89F31C2BC19AF5D1C /* Request.swift */; };
-		24C721297A680FD97C075FF22952692E /* Pods-PandaFit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E997B62E651F0402888E9F87869C7213 /* Pods-PandaFit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		305100A012A2657271FDC72C75203BDE /* Pods-PandaFit WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B8BE1D13A39E8A609816A97AD0C78BA /* Pods-PandaFit WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3144B154F095B112ACC5AA244D6C0AA1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C67980A1643E24DFF565CEA05A5E4A /* Foundation.framework */; };
+		323FAD23015F6D82B0360B818894F158 /* Pods-PandaFit WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D3790007E43DABA12DF583F599CF6E /* Pods-PandaFit WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3982B850C43B41BA6D25F440F0412E9B /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A86E4845F495D22067D31DD2444516 /* Timeline.swift */; };
+		4035A317A87E36375558AAF9BF6720B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2C9FDD4EC74D1474B464FAE3F3E124 /* Foundation.framework */; };
 		4811CD4B640FA8C4786D65DA9D9B2DE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2C9FDD4EC74D1474B464FAE3F3E124 /* Foundation.framework */; };
-		5109D14C0B15D2096506E6EA910FC6E6 /* Pods-PandaFit WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35145490290476AE8FA2E622B15F0335 /* Pods-PandaFit WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C3E846AEF35C07F238C3EB7A637CD86 /* Pods-PandaFit WatchKit App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADA3DFEC6874EF3E20BD271BDB194E7A /* Pods-PandaFit WatchKit App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5111AEF65DC9CB2B58E24EE707CC3697 /* UIImageView+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8F864B86D55C1EBA65BB1005488236 /* UIImageView+AlamofireImage.swift */; };
+		5205AE15F9F448AC7F38323C0A3C6494 /* Pods-PandaFit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09BE20BD5394520D1ED214BD4F58A89B /* Pods-PandaFit-dummy.m */; };
 		523A2A7D845D2BF63244348680538285 /* ImageFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78F0C59D72E536A49A29DF9551B2FC /* ImageFilter.swift */; };
 		569B251677908E2FE12D150D03458750 /* UIImage+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40925083A89DB524274043A5544403F4 /* UIImage+AlamofireImage.swift */; };
+		61CBC4E1A1DD526EDB876E3EFBFC3389 /* Pods-PandaFit WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 706D2AA92D6953CDA2677F77165D5F03 /* Pods-PandaFit WatchKit Extension-dummy.m */; };
 		62143065F94E53F437DCE5D7A998D66D /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DA7696A230A8C5098EDB1708AB122B /* AFError.swift */; };
 		64146903ED33909D2DE6D77550BBCA32 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B46CA3DB56C3D2E677654A1304B15 /* ImageCache.swift */; };
+		64E680C43F1320D847472E3675988783 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C67980A1643E24DFF565CEA05A5E4A /* Foundation.framework */; };
 		7298B73F98597A3C93AB872EB6255D4C /* UIButton+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F506873F53797C3F19F6F175128C827D /* UIButton+AlamofireImage.swift */; };
 		7CA5A9BA5246FDA8227233E310029392 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD180178B74D26C52790871D11EA82 /* Alamofire.swift */; };
 		81AA1AD67B04AC07575C41E2520B8780 /* Request+AlamofireImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A0238C2D2ED7E1BCF74C638704BCC /* Request+AlamofireImage.swift */; };
@@ -32,39 +34,37 @@
 		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2C9FDD4EC74D1474B464FAE3F3E124 /* Foundation.framework */; };
 		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 319D0D5C0A449FE881C76727B80F34B3 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BF27487EC8401E943675FA598541922 /* AFIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FF6D0367AC8FAF28B714B9C517B09 /* AFIError.swift */; };
-		9EB84162F1A526465AB7E6B15E151999 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C67980A1643E24DFF565CEA05A5E4A /* Foundation.framework */; };
 		A79AC30123B0C2177D67F6ED6A1B3215 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F0D298505D12F22418F96BD2D6DE4F /* SessionManager.swift */; };
 		AF158CAAF4DD319009AFC855DC995D90 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E36A061568443C4892C00390B9395C /* ParameterEncoding.swift */; };
 		B198F87E2DBF56FFCD7ABF2BE84DFD5C /* AlamofireImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B91CDE9C60D5C92C6A2EE8754EB1042 /* AlamofireImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B66FD1FECE7292FF67A03089FBC0CDDE /* Pods-PandaFit WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30487B7EB30A00AC9785A1CF681080CE /* Pods-PandaFit WatchKit App-dummy.m */; };
 		B8154C96802336E5DDA5CEE97C3180A0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1F2DAC9C123E8BF5B8BBA7C3F17E4E /* ResponseSerialization.swift */; };
 		C0AEA97E7684DDAD56998C0AE198A433 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D61BFE0C2AB6D5B144D90851B0FBBDA /* ServerTrustPolicy.swift */; };
+		C4994CC36F4AE457173D419F22733AC6 /* Pods-PandaFit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AF934EEB757E1BE9795460ECBC4960D /* Pods-PandaFit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7A3408350643ADE1018826C766EE356 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A337CF61ED3C76DCDB6CABF7DDA57F4 /* MultipartFormData.swift */; };
 		DF1BBF94997A2F4248B42B25EA919EC2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB939DAB70B7498BD951FDFBB552630 /* Result.swift */; };
-		DFDCA5EF44C2FF846E34CD4EF24EF101 /* Pods-PandaFit WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D32E10020CBD6EAB1047C0A7581EEBF /* Pods-PandaFit WatchKit Extension-dummy.m */; };
 		E1F583CB4A68A928CD197250AA752926 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF45CF505DC4805961C6AE375E9B4449 /* TaskDelegate.swift */; };
 		E2A1C34237B4E928E5F85C097F4C2551 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46909E67FE468BAA9A40190506BC2DD /* DispatchQueue+Alamofire.swift */; };
 		E59BF19C0AFA68B741552319FC478C7B /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F750B175C7230B153936AECFDF9D4B69 /* NetworkReachabilityManager.swift */; };
 		EE97E27EDD8013C92A7AB8920C893716 /* AlamofireImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A072CF49792CCCD02FBE2404E54F3964 /* AlamofireImage-dummy.m */; };
 		EF3891FBC5E399BA011973530F0AE5D4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8303DFF4F0412C06016FB01FE8A0AE2C /* Image.swift */; };
-		F6584BD79E3F2269BB67F673D406E162 /* Pods-PandaFit WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96EF77AC117541CF928ED6805C423E28 /* Pods-PandaFit WatchKit App-dummy.m */; };
-		FB7BAC2B98154F4DB873E8286052305D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A2C9FDD4EC74D1474B464FAE3F3E124 /* Foundation.framework */; };
 		FFFDD494EE6D1B83DDAF5F2721F685A6 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445B347EC7347C5B752DAEF7EFC85B3D /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B0E7AD0B8FC1D68C0A620CD9D7E6F82 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
-			remoteInfo = Alamofire;
-		};
-		618A235A99433C68B9F8FAAD9D3623BD /* PBXContainerItemProxy */ = {
+		386718276240A26CA7EC09C63EE51450 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 333E47F1004946B94926B19979768D18;
 			remoteInfo = AlamofireImage;
+		};
+		822AA204B0A82B5F5638B5E9DDA16162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
+			remoteInfo = Alamofire;
 		};
 		85381D4D00E74DDA31B9F68BF666565E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -77,90 +77,90 @@
 
 /* Begin PBXFileReference section */
 		00273894B2CACADC70DE7C63D9DE900F /* AlamofireImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-prefix.pch"; sourceTree = "<group>"; };
+		0031583C2A8C0A2EB819ECFC70138FEB /* Pods-PandaFit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaFit-acknowledgements.plist"; sourceTree = "<group>"; };
+		004D0E1DCB1FA43B62702E2E1C46A29A /* Pods-PandaFit WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PandaFit WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		017C040C3370B9A89F31C2BC19AF5D1C /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
-		06258F61078B6849D56DFECB3D209728 /* Pods-PandaFit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit-resources.sh"; sourceTree = "<group>"; };
-		0B8BE1D13A39E8A609816A97AD0C78BA /* Pods-PandaFit WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaFit WatchKit App-umbrella.h"; sourceTree = "<group>"; };
-		192A820B4FF7DDD6EA8CE49689426D2A /* Pods-PandaFit WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaFit WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		09BE20BD5394520D1ED214BD4F58A89B /* Pods-PandaFit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaFit-dummy.m"; sourceTree = "<group>"; };
+		1957E19D8F62593E85F531C3268AA02A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B8F864B86D55C1EBA65BB1005488236 /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
-		2213075ADEC2AEDBB11183182C419F15 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BB4713E90C65815C4D1EABFFC782FFF /* Pods-PandaFit WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaFit WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		1F26BDBA892046A8917B17E5DBB41DC6 /* Pods-PandaFit WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
+		22D3790007E43DABA12DF583F599CF6E /* Pods-PandaFit WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaFit WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
 		22FD4D2047EEAE80AEBCB1594D341FE8 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		29D61A3CF14C9F8A3215CACDE1CD26EE /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
-		2AB85FC61A353E1F22DB53A66D4A9FA2 /* Pods-PandaFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit.debug.xcconfig"; sourceTree = "<group>"; };
+		29EBAC16769DA7ADED96E8A5C0342208 /* Pods-PandaFit WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		2B91CDE9C60D5C92C6A2EE8754EB1042 /* AlamofireImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlamofireImage-umbrella.h"; sourceTree = "<group>"; };
 		2D6EFA1B14F4F2AC1C907F7D8D75E2A2 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Source/ImageDownloader.swift; sourceTree = "<group>"; };
 		2D6F897E8718BCA0F1B7F123EBBBEBFF /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		2DCD9DF3D427286D9D841157CE753457 /* Pods-PandaFit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit-resources.sh"; sourceTree = "<group>"; };
+		2E9A60E973C307C06EC791855F97BB72 /* Pods_PandaFit_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30487B7EB30A00AC9785A1CF681080CE /* Pods-PandaFit WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaFit WatchKit App-dummy.m"; sourceTree = "<group>"; };
 		319D0D5C0A449FE881C76727B80F34B3 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
-		31E56BF9594CA672E2DB64FF012DD543 /* Pods-PandaFit WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaFit WatchKit Extension.modulemap"; sourceTree = "<group>"; };
-		32EC0832CFC8D863103DE47086E79A32 /* Pods-PandaFit WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
-		35145490290476AE8FA2E622B15F0335 /* Pods-PandaFit WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaFit WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		33B0E07C88B0ACFDEC72834D3E6F0E85 /* Pods-PandaFit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaFit.modulemap"; sourceTree = "<group>"; };
+		3E5E2479230AAF61D1486B979FC8A45C /* Pods-PandaFit WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaFit WatchKit Extension.modulemap"; sourceTree = "<group>"; };
 		40925083A89DB524274043A5544403F4 /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		445B347EC7347C5B752DAEF7EFC85B3D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		4931B509A0D2F608DD9325D39BC633A8 /* Pods-PandaFit WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		4A2C9FDD4EC74D1474B464FAE3F3E124 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		53C67980A1643E24DFF565CEA05A5E4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		586A7FB7F9A1A022142DA18EC7BC6ACE /* Pods-PandaFit WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = "Pods-PandaFit WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		580D205DA7B5C48F88A10304F8225E50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A95E5EB2FA5116C9DDAEA491E29567 /* Pods-PandaFit WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		5ABC2BE05116FCC79D8A2AECBEE03036 /* Pods_PandaFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D61BFE0C2AB6D5B144D90851B0FBBDA /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		5EB7A3ABB75BC95C62106761E735DB7D /* Pods-PandaFit WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaFit WatchKit App.modulemap"; sourceTree = "<group>"; };
 		5F1F2DAC9C123E8BF5B8BBA7C3F17E4E /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		6B66B78AD4D66140049BE25840F85DA6 /* Pods-PandaFit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaFit-acknowledgements.plist"; sourceTree = "<group>"; };
+		68D07C69EFA4195888D7B80CF7963FFD /* Pods_PandaFit_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B42C8FFEBEACB547620E54B71B7B62B /* Pods-PandaFit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit-frameworks.sh"; sourceTree = "<group>"; };
+		6EBFB7AF61F7B76C029318C5993F3DF3 /* Pods-PandaFit WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
 		6FBD180178B74D26C52790871D11EA82 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		71EAB8501092A9789458D7A0CE9F86C2 /* Pods_PandaFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		732F43BC55D8D973302CA21D58A32B71 /* Pods-PandaFit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaFit.modulemap"; sourceTree = "<group>"; };
+		706D2AA92D6953CDA2677F77165D5F03 /* Pods-PandaFit WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaFit WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
 		75A86E4845F495D22067D31DD2444516 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		78C5DBB88D6D80D86A1CF8A9E633C7FF /* Pods-PandaFit WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		7A337CF61ED3C76DCDB6CABF7DDA57F4 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		7AF256DE4AE5026215CC5BDCB0EE6775 /* Pods-PandaFit WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
-		7B42C7FB2FEAD8F48598F3A10BB8A96E /* Pods-PandaFit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = "Pods-PandaFit-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D32E10020CBD6EAB1047C0A7581EEBF /* Pods-PandaFit WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaFit WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
 		7F1B46CA3DB56C3D2E677654A1304B15 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Source/ImageCache.swift; sourceTree = "<group>"; };
 		8303DFF4F0412C06016FB01FE8A0AE2C /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
-		86A8DCA2D169F86F9AFB675CB7E53ED5 /* Pods-PandaFit WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
-		87313CFBFDC995F629A9674DD063625C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CE615D36A6BEBD5BCFA3153B86F7DE7 /* Pods-PandaFit WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PandaFit WatchKit App.modulemap"; sourceTree = "<group>"; };
-		921A8247A0242175401E0B47A8D4E8E5 /* Pods-PandaFit WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		86C48532F9DDB43F54D0B1619D1A106A /* Pods-PandaFit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PandaFit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8EA5307713FB086427E43211BB4965F5 /* Pods-PandaFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit.release.xcconfig"; sourceTree = "<group>"; };
+		92AF432502D1336F086EED290C2F1AE2 /* Pods-PandaFit WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaFit WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93B202F39E3D6729A3BF6A095430DD85 /* Pods-PandaFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit.release.xcconfig"; sourceTree = "<group>"; };
-		95658DFE08B6774EB45ED39C5E8FBBEB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960A9ABC53BD0948226D437C9716C6B3 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
-		96EF77AC117541CF928ED6805C423E28 /* Pods-PandaFit WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaFit WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		9AF934EEB757E1BE9795460ECBC4960D /* Pods-PandaFit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaFit-umbrella.h"; sourceTree = "<group>"; };
 		9B37B0F47317288B871A97C51CEF14FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A072CF49792CCCD02FBE2404E54F3964 /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
 		A1F0D298505D12F22418F96BD2D6DE4F /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		A99FF6D0367AC8FAF28B714B9C517B09 /* AFIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFIError.swift; path = Source/AFIError.swift; sourceTree = "<group>"; };
-		A9AAB2EC2F4BFEB371B130C2A1942BEB /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD46CFCE97BD58A997C83B61AA1168C /* Pods-PandaFit WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
+		ADA3DFEC6874EF3E20BD271BDB194E7A /* Pods-PandaFit WatchKit App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaFit WatchKit App-umbrella.h"; sourceTree = "<group>"; };
 		AEF21FE9D010AA7E8064CAB3DDEE4D01 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		C78A725DE09A6DD6039E081847249241 /* Pods-PandaFit WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit App-resources.sh"; sourceTree = "<group>"; };
-		C84420AC50FC32BF21FD4F5F9581EB1D /* Pods-PandaFit WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = "Pods-PandaFit WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C4A744C10553B732EAD0D0E45A3290FF /* Pods-PandaFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit.debug.xcconfig"; sourceTree = "<group>"; };
 		CD48160E946CF60C44697D4766239A69 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		CD52CF8486A9AA695ABD886C3ACC22FF /* Pods_PandaFit_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB169F7011C3AE22F10E4FB8BB941D0 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		D1E848B86E6A9C49DE6267CC2C491CF6 /* Pods-PandaFit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit-frameworks.sh"; sourceTree = "<group>"; };
+		D059A72610F06A5FB9125C7F6905FE4A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D46909E67FE468BAA9A40190506BC2DD /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		D7481C7222E71FB8BB3ED831C11CC21A /* Pods-PandaFit WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PandaFit WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		D7DA7696A230A8C5098EDB1708AB122B /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
-		D94F62EEF43904FBEBD1DC44511DCFED /* Pods_PandaFit_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D10C4D50179A5EB95642F61DA0A7A6 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CA9EFBD3188B5D7EB6B99C52233056 /* AlamofireImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlamofireImage.xcconfig; sourceTree = "<group>"; };
-		DA447DAA7E58BA75F05BCFE89DFB4395 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE95B8FEC7CAF9BC78333688FE7319F1 /* AlamofireImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AlamofireImage.modulemap; sourceTree = "<group>"; };
 		DF45CF505DC4805961C6AE375E9B4449 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		E205D8F914391D06F6667FE9EAAA77F1 /* Pods-PandaFit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PandaFit-dummy.m"; sourceTree = "<group>"; };
+		E05A23349152A8FA56E88E0ED6B976B7 /* Pods-PandaFit WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PandaFit WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E39A0238C2D2ED7E1BCF74C638704BCC /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
+		E418FAE30F0D734DAFB2A7EF914C3EA7 /* Pods-PandaFit WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		E49FAD71119F6D53CE9E24BE14BFF0F1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E997B62E651F0402888E9F87869C7213 /* Pods-PandaFit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PandaFit-umbrella.h"; sourceTree = "<group>"; };
+		E66E654688EA076BDA23AAEF44DFEDC3 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE63FD290F9929797098DDFD7DFCFFA /* Pods-PandaFit WatchKit App-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PandaFit WatchKit App-resources.sh"; sourceTree = "<group>"; };
 		EBB939DAB70B7498BD951FDFBB552630 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		F0E36A061568443C4892C00390B9395C /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		F506873F53797C3F19F6F175128C827D /* UIButton+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+AlamofireImage.swift"; path = "Source/UIButton+AlamofireImage.swift"; sourceTree = "<group>"; };
 		F750B175C7230B153936AECFDF9D4B69 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		F8B1CF3D3B1ADE4E5E0A86A9838BCAA0 /* Pods-PandaFit WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
-		FAB716E6452B49F8689F34FFEFC945A6 /* Pods-PandaFit WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PandaFit WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC3003A826F5946919CB186257CC3E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC78F0C59D72E536A49A29DF9551B2FC /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5BB28120E6DE3BEFAA3EA4CCFF7AA88C /* Frameworks */ = {
+		B15FF1CD7D309D69BBA7235D69CDC66A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3144B154F095B112ACC5AA244D6C0AA1 /* Foundation.framework in Frameworks */,
+				64E680C43F1320D847472E3675988783 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,19 +172,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE8FFF5D168E368EE007D5636DAE5B20 /* Frameworks */ = {
+		B45C8D03C4B79C6475A038C3137FCC7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7BAC2B98154F4DB873E8286052305D /* Foundation.framework in Frameworks */,
+				4035A317A87E36375558AAF9BF6720B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBA37484D9C2862DE507024028EC46AB /* Frameworks */ = {
+		C8EED8B49A55E72F85067827535081D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EB84162F1A526465AB7E6B15E151999 /* Foundation.framework in Frameworks */,
+				0AB057455B06BC7DC6C015BF61552580 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,47 +200,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		11A303859F014655E86A3D98089C8A5E /* Pods-PandaFit WatchKit App */ = {
+		1ADEF7CD31776DB2DFF9574BC963A041 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				95658DFE08B6774EB45ED39C5E8FBBEB /* Info.plist */,
-				8CE615D36A6BEBD5BCFA3153B86F7DE7 /* Pods-PandaFit WatchKit App.modulemap */,
-				586A7FB7F9A1A022142DA18EC7BC6ACE /* Pods-PandaFit WatchKit App-acknowledgements.markdown */,
-				192A820B4FF7DDD6EA8CE49689426D2A /* Pods-PandaFit WatchKit App-acknowledgements.plist */,
-				96EF77AC117541CF928ED6805C423E28 /* Pods-PandaFit WatchKit App-dummy.m */,
-				7AF256DE4AE5026215CC5BDCB0EE6775 /* Pods-PandaFit WatchKit App-frameworks.sh */,
-				C78A725DE09A6DD6039E081847249241 /* Pods-PandaFit WatchKit App-resources.sh */,
-				0B8BE1D13A39E8A609816A97AD0C78BA /* Pods-PandaFit WatchKit App-umbrella.h */,
-				4931B509A0D2F608DD9325D39BC633A8 /* Pods-PandaFit WatchKit App.debug.xcconfig */,
-				921A8247A0242175401E0B47A8D4E8E5 /* Pods-PandaFit WatchKit App.release.xcconfig */,
+				640188D103BECBBF60DF73A013ED22CB /* Pods-PandaFit */,
+				40D10C7B06966029D8574F7710A4BA85 /* Pods-PandaFit WatchKit App */,
+				F0B85334B56F75871F327183EA15D696 /* Pods-PandaFit WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		40D10C7B06966029D8574F7710A4BA85 /* Pods-PandaFit WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				580D205DA7B5C48F88A10304F8225E50 /* Info.plist */,
+				5EB7A3ABB75BC95C62106761E735DB7D /* Pods-PandaFit WatchKit App.modulemap */,
+				E05A23349152A8FA56E88E0ED6B976B7 /* Pods-PandaFit WatchKit App-acknowledgements.markdown */,
+				92AF432502D1336F086EED290C2F1AE2 /* Pods-PandaFit WatchKit App-acknowledgements.plist */,
+				30487B7EB30A00AC9785A1CF681080CE /* Pods-PandaFit WatchKit App-dummy.m */,
+				1F26BDBA892046A8917B17E5DBB41DC6 /* Pods-PandaFit WatchKit App-frameworks.sh */,
+				EAE63FD290F9929797098DDFD7DFCFFA /* Pods-PandaFit WatchKit App-resources.sh */,
+				ADA3DFEC6874EF3E20BD271BDB194E7A /* Pods-PandaFit WatchKit App-umbrella.h */,
+				58A95E5EB2FA5116C9DDAEA491E29567 /* Pods-PandaFit WatchKit App.debug.xcconfig */,
+				78C5DBB88D6D80D86A1CF8A9E633C7FF /* Pods-PandaFit WatchKit App.release.xcconfig */,
 			);
 			name = "Pods-PandaFit WatchKit App";
 			path = "Target Support Files/Pods-PandaFit WatchKit App";
 			sourceTree = "<group>";
 		};
-		1DC358863F89DD561F0DB195990C7955 /* Targets Support Files */ = {
+		640188D103BECBBF60DF73A013ED22CB /* Pods-PandaFit */ = {
 			isa = PBXGroup;
 			children = (
-				22A9DD7B695C88E2344A966D9112EC54 /* Pods-PandaFit */,
-				11A303859F014655E86A3D98089C8A5E /* Pods-PandaFit WatchKit App */,
-				EF363C91F1CA4EA027E8EEC38B7902B1 /* Pods-PandaFit WatchKit Extension */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		22A9DD7B695C88E2344A966D9112EC54 /* Pods-PandaFit */ = {
-			isa = PBXGroup;
-			children = (
-				87313CFBFDC995F629A9674DD063625C /* Info.plist */,
-				732F43BC55D8D973302CA21D58A32B71 /* Pods-PandaFit.modulemap */,
-				7B42C7FB2FEAD8F48598F3A10BB8A96E /* Pods-PandaFit-acknowledgements.markdown */,
-				6B66B78AD4D66140049BE25840F85DA6 /* Pods-PandaFit-acknowledgements.plist */,
-				E205D8F914391D06F6667FE9EAAA77F1 /* Pods-PandaFit-dummy.m */,
-				D1E848B86E6A9C49DE6267CC2C491CF6 /* Pods-PandaFit-frameworks.sh */,
-				06258F61078B6849D56DFECB3D209728 /* Pods-PandaFit-resources.sh */,
-				E997B62E651F0402888E9F87869C7213 /* Pods-PandaFit-umbrella.h */,
-				2AB85FC61A353E1F22DB53A66D4A9FA2 /* Pods-PandaFit.debug.xcconfig */,
-				93B202F39E3D6729A3BF6A095430DD85 /* Pods-PandaFit.release.xcconfig */,
+				D059A72610F06A5FB9125C7F6905FE4A /* Info.plist */,
+				33B0E07C88B0ACFDEC72834D3E6F0E85 /* Pods-PandaFit.modulemap */,
+				86C48532F9DDB43F54D0B1619D1A106A /* Pods-PandaFit-acknowledgements.markdown */,
+				0031583C2A8C0A2EB819ECFC70138FEB /* Pods-PandaFit-acknowledgements.plist */,
+				09BE20BD5394520D1ED214BD4F58A89B /* Pods-PandaFit-dummy.m */,
+				6B42C8FFEBEACB547620E54B71B7B62B /* Pods-PandaFit-frameworks.sh */,
+				2DCD9DF3D427286D9D841157CE753457 /* Pods-PandaFit-resources.sh */,
+				9AF934EEB757E1BE9795460ECBC4960D /* Pods-PandaFit-umbrella.h */,
+				C4A744C10553B732EAD0D0E45A3290FF /* Pods-PandaFit.debug.xcconfig */,
+				8EA5307713FB086427E43211BB4965F5 /* Pods-PandaFit.release.xcconfig */,
 			);
 			name = "Pods-PandaFit";
 			path = "Target Support Files/Pods-PandaFit";
@@ -275,8 +275,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				9C747F1367F391C8139B539B54EA1896 /* Frameworks */,
 				6FF3CE06F7D89F16588F3A74B93F1B66 /* Pods */,
-				A310F8C5DE6DFD8681D9E7DDC0FA2B1F /* Products */,
-				1DC358863F89DD561F0DB195990C7955 /* Targets Support Files */,
+				C937BC538E12C18B1710362AA6E585CD /* Products */,
+				1ADEF7CD31776DB2DFF9574BC963A041 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -288,18 +288,6 @@
 				D22AE495EA27F03F812581EF2EDC71C5 /* watchOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A310F8C5DE6DFD8681D9E7DDC0FA2B1F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2213075ADEC2AEDBB11183182C419F15 /* Alamofire.framework */,
-				A9AAB2EC2F4BFEB371B130C2A1942BEB /* AlamofireImage.framework */,
-				71EAB8501092A9789458D7A0CE9F86C2 /* Pods_PandaFit.framework */,
-				D94F62EEF43904FBEBD1DC44511DCFED /* Pods_PandaFit_WatchKit_App.framework */,
-				CD52CF8486A9AA695ABD886C3ACC22FF /* Pods_PandaFit_WatchKit_Extension.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BA38DA63E92F45B63F1442D6D11ADBEA /* Support Files */ = {
@@ -314,6 +302,18 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		C937BC538E12C18B1710362AA6E585CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D10C4D50179A5EB95642F61DA0A7A6 /* Alamofire.framework */,
+				E66E654688EA076BDA23AAEF44DFEDC3 /* AlamofireImage.framework */,
+				5ABC2BE05116FCC79D8A2AECBEE03036 /* Pods_PandaFit.framework */,
+				2E9A60E973C307C06EC791855F97BB72 /* Pods_PandaFit_WatchKit_App.framework */,
+				68D07C69EFA4195888D7B80CF7963FFD /* Pods_PandaFit_WatchKit_Extension.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D22AE495EA27F03F812581EF2EDC71C5 /* watchOS */ = {
@@ -374,19 +374,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EF363C91F1CA4EA027E8EEC38B7902B1 /* Pods-PandaFit WatchKit Extension */ = {
+		F0B85334B56F75871F327183EA15D696 /* Pods-PandaFit WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				DA447DAA7E58BA75F05BCFE89DFB4395 /* Info.plist */,
-				31E56BF9594CA672E2DB64FF012DD543 /* Pods-PandaFit WatchKit Extension.modulemap */,
-				C84420AC50FC32BF21FD4F5F9581EB1D /* Pods-PandaFit WatchKit Extension-acknowledgements.markdown */,
-				D7481C7222E71FB8BB3ED831C11CC21A /* Pods-PandaFit WatchKit Extension-acknowledgements.plist */,
-				7D32E10020CBD6EAB1047C0A7581EEBF /* Pods-PandaFit WatchKit Extension-dummy.m */,
-				32EC0832CFC8D863103DE47086E79A32 /* Pods-PandaFit WatchKit Extension-frameworks.sh */,
-				86A8DCA2D169F86F9AFB675CB7E53ED5 /* Pods-PandaFit WatchKit Extension-resources.sh */,
-				35145490290476AE8FA2E622B15F0335 /* Pods-PandaFit WatchKit Extension-umbrella.h */,
-				FAB716E6452B49F8689F34FFEFC945A6 /* Pods-PandaFit WatchKit Extension.debug.xcconfig */,
-				F8B1CF3D3B1ADE4E5E0A86A9838BCAA0 /* Pods-PandaFit WatchKit Extension.release.xcconfig */,
+				1957E19D8F62593E85F531C3268AA02A /* Info.plist */,
+				3E5E2479230AAF61D1486B979FC8A45C /* Pods-PandaFit WatchKit Extension.modulemap */,
+				004D0E1DCB1FA43B62702E2E1C46A29A /* Pods-PandaFit WatchKit Extension-acknowledgements.markdown */,
+				1BB4713E90C65815C4D1EABFFC782FFF /* Pods-PandaFit WatchKit Extension-acknowledgements.plist */,
+				706D2AA92D6953CDA2677F77165D5F03 /* Pods-PandaFit WatchKit Extension-dummy.m */,
+				AAD46CFCE97BD58A997C83B61AA1168C /* Pods-PandaFit WatchKit Extension-frameworks.sh */,
+				6EBFB7AF61F7B76C029318C5993F3DF3 /* Pods-PandaFit WatchKit Extension-resources.sh */,
+				22D3790007E43DABA12DF583F599CF6E /* Pods-PandaFit WatchKit Extension-umbrella.h */,
+				29EBAC16769DA7ADED96E8A5C0342208 /* Pods-PandaFit WatchKit Extension.debug.xcconfig */,
+				E418FAE30F0D734DAFB2A7EF914C3EA7 /* Pods-PandaFit WatchKit Extension.release.xcconfig */,
 			);
 			name = "Pods-PandaFit WatchKit Extension";
 			path = "Target Support Files/Pods-PandaFit WatchKit Extension";
@@ -395,27 +395,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6EE225062CC1F62B4656C0CEB1BCA73E /* Headers */ = {
+		9DE78C0502EB406AE1312C41ADB22583 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305100A012A2657271FDC72C75203BDE /* Pods-PandaFit WatchKit App-umbrella.h in Headers */,
+				C4994CC36F4AE457173D419F22733AC6 /* Pods-PandaFit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C815D835805BB9F7E774DDB6D9468045 /* Headers */ = {
+		D32863CE44034806CF9B3CB9804958FD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C721297A680FD97C075FF22952692E /* Pods-PandaFit-umbrella.h in Headers */,
+				4C3E846AEF35C07F238C3EB7A637CD86 /* Pods-PandaFit WatchKit App-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C97872604284603FF2D61F09771FFFF0 /* Headers */ = {
+		DAA05D3C0E198F68C4065CCB0F553ED4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5109D14C0B15D2096506E6EA910FC6E6 /* Pods-PandaFit WatchKit Extension-umbrella.h in Headers */,
+				323FAD23015F6D82B0360B818894F158 /* Pods-PandaFit WatchKit Extension-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,23 +438,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2CD20743D95BEE3EC6C3907458309FAE /* Pods-PandaFit WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 212B8FE72AAFEB62BDDA8748C14B796C /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit App" */;
-			buildPhases = (
-				A4027EEC1211C4FAFAC1C8AE74F3E3DE /* Sources */,
-				EBA37484D9C2862DE507024028EC46AB /* Frameworks */,
-				6EE225062CC1F62B4656C0CEB1BCA73E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-PandaFit WatchKit App";
-			productName = "Pods-PandaFit WatchKit App";
-			productReference = D94F62EEF43904FBEBD1DC44511DCFED /* Pods_PandaFit_WatchKit_App.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		333E47F1004946B94926B19979768D18 /* AlamofireImage */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8A3B4915F4D7E60968949529F5AECE8 /* Build configuration list for PBXNativeTarget "AlamofireImage" */;
@@ -470,24 +453,43 @@
 			);
 			name = AlamofireImage;
 			productName = AlamofireImage;
-			productReference = A9AAB2EC2F4BFEB371B130C2A1942BEB /* AlamofireImage.framework */;
+			productReference = E66E654688EA076BDA23AAEF44DFEDC3 /* AlamofireImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BC472B310DD061D9B24FDDA128E257C /* Pods-PandaFit WatchKit Extension */ = {
+		486E4D781E0CBBD27CC1BE4C58264F04 /* Pods-PandaFit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 872945CD524C7079D7DC76848C3894B3 /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit Extension" */;
+			buildConfigurationList = 6636ECF6F3CBE126B6702E5BB4EEE078 /* Build configuration list for PBXNativeTarget "Pods-PandaFit" */;
 			buildPhases = (
-				D47F05A3CCDF44C1F569A6D68E0775C3 /* Sources */,
-				5BB28120E6DE3BEFAA3EA4CCFF7AA88C /* Frameworks */,
-				C97872604284603FF2D61F09771FFFF0 /* Headers */,
+				5B425D2106BFEF57BB75E548FA40EDEF /* Sources */,
+				B45C8D03C4B79C6475A038C3137FCC7F /* Frameworks */,
+				9DE78C0502EB406AE1312C41ADB22583 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6A1E6B819EED5A552DE67AAC1C632FF /* PBXTargetDependency */,
+				B5C51AFCEAD72BE806881A0C25D08104 /* PBXTargetDependency */,
+			);
+			name = "Pods-PandaFit";
+			productName = "Pods-PandaFit";
+			productReference = 5ABC2BE05116FCC79D8A2AECBEE03036 /* Pods_PandaFit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		651D4EBD3E091963B614593449B4EB71 /* Pods-PandaFit WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C5FA4E88FB35D8A635AB9C1316AD0F3 /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit App" */;
+			buildPhases = (
+				A3783CD232DCC179A8C3F73F3EB9C059 /* Sources */,
+				B15FF1CD7D309D69BBA7235D69CDC66A /* Frameworks */,
+				D32863CE44034806CF9B3CB9804958FD /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-PandaFit WatchKit Extension";
-			productName = "Pods-PandaFit WatchKit Extension";
-			productReference = CD52CF8486A9AA695ABD886C3ACC22FF /* Pods_PandaFit_WatchKit_Extension.framework */;
+			name = "Pods-PandaFit WatchKit App";
+			productName = "Pods-PandaFit WatchKit App";
+			productReference = 2E9A60E973C307C06EC791855F97BB72 /* Pods_PandaFit_WatchKit_App.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
@@ -504,26 +506,24 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 2213075ADEC2AEDBB11183182C419F15 /* Alamofire.framework */;
+			productReference = D8D10C4D50179A5EB95642F61DA0A7A6 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7CA0486B6552E8C15764EC91A19CBB6D /* Pods-PandaFit */ = {
+		87132FF5DEDEC9EF2244BCACE948A8D9 /* Pods-PandaFit WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CBE4AEB4FD4A9F63D448DCDE12CD5FC /* Build configuration list for PBXNativeTarget "Pods-PandaFit" */;
+			buildConfigurationList = D899D41CF3650F40796F6AD0F8041FAB /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit Extension" */;
 			buildPhases = (
-				9A2D3BDA955A2AD0DC4096C3A61980AD /* Sources */,
-				CE8FFF5D168E368EE007D5636DAE5B20 /* Frameworks */,
-				C815D835805BB9F7E774DDB6D9468045 /* Headers */,
+				E7DED477D65EF7106431A1BB5101D6EC /* Sources */,
+				C8EED8B49A55E72F85067827535081D7 /* Frameworks */,
+				DAA05D3C0E198F68C4065CCB0F553ED4 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				10C7B76E2CE5DE64D1AE1B005A043B73 /* PBXTargetDependency */,
-				E22287898A997DE644F8415F47A128F9 /* PBXTargetDependency */,
 			);
-			name = "Pods-PandaFit";
-			productName = "Pods-PandaFit";
-			productReference = 71EAB8501092A9789458D7A0CE9F86C2 /* Pods_PandaFit.framework */;
+			name = "Pods-PandaFit WatchKit Extension";
+			productName = "Pods-PandaFit WatchKit Extension";
+			productReference = 68D07C69EFA4195888D7B80CF7963FFD /* Pods_PandaFit_WatchKit_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -543,15 +543,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A310F8C5DE6DFD8681D9E7DDC0FA2B1F /* Products */;
+			productRefGroup = C937BC538E12C18B1710362AA6E585CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
 				333E47F1004946B94926B19979768D18 /* AlamofireImage */,
-				7CA0486B6552E8C15764EC91A19CBB6D /* Pods-PandaFit */,
-				2CD20743D95BEE3EC6C3907458309FAE /* Pods-PandaFit WatchKit App */,
-				3BC472B310DD061D9B24FDDA128E257C /* Pods-PandaFit WatchKit Extension */,
+				486E4D781E0CBBD27CC1BE4C58264F04 /* Pods-PandaFit */,
+				651D4EBD3E091963B614593449B4EB71 /* Pods-PandaFit WatchKit App */,
+				87132FF5DEDEC9EF2244BCACE948A8D9 /* Pods-PandaFit WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -582,27 +582,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A2D3BDA955A2AD0DC4096C3A61980AD /* Sources */ = {
+		5B425D2106BFEF57BB75E548FA40EDEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10B3C725C8EA8C943CDB2780CF365C13 /* Pods-PandaFit-dummy.m in Sources */,
+				5205AE15F9F448AC7F38323C0A3C6494 /* Pods-PandaFit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4027EEC1211C4FAFAC1C8AE74F3E3DE /* Sources */ = {
+		A3783CD232DCC179A8C3F73F3EB9C059 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6584BD79E3F2269BB67F673D406E162 /* Pods-PandaFit WatchKit App-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D47F05A3CCDF44C1F569A6D68E0775C3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DFDCA5EF44C2FF846E34CD4EF24EF101 /* Pods-PandaFit WatchKit Extension-dummy.m in Sources */,
+				B66FD1FECE7292FF67A03089FBC0CDDE /* Pods-PandaFit WatchKit App-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,14 +615,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7DED477D65EF7106431A1BB5101D6EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61CBC4E1A1DD526EDB876E3EFBFC3389 /* Pods-PandaFit WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		10C7B76E2CE5DE64D1AE1B005A043B73 /* PBXTargetDependency */ = {
+		A6A1E6B819EED5A552DE67AAC1C632FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
-			targetProxy = 0B0E7AD0B8FC1D68C0A620CD9D7E6F82 /* PBXContainerItemProxy */;
+			targetProxy = 822AA204B0A82B5F5638B5E9DDA16162 /* PBXContainerItemProxy */;
 		};
 		AB1425AD8378959508765E25A9362826 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -638,18 +638,89 @@
 			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
 			targetProxy = 85381D4D00E74DDA31B9F68BF666565E /* PBXContainerItemProxy */;
 		};
-		E22287898A997DE644F8415F47A128F9 /* PBXTargetDependency */ = {
+		B5C51AFCEAD72BE806881A0C25D08104 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AlamofireImage;
 			target = 333E47F1004946B94926B19979768D18 /* AlamofireImage */;
-			targetProxy = 618A235A99433C68B9F8FAAD9D3623BD /* PBXContainerItemProxy */;
+			targetProxy = 386718276240A26CA7EC09C63EE51450 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3E9B9CDFF028915170FB91EDE5F12899 /* Debug */ = {
+		1466FADDFBC6CD677318DDC71D39FF80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4931B509A0D2F608DD9325D39BC633A8 /* Pods-PandaFit WatchKit App.debug.xcconfig */;
+			baseConfigurationReference = 8EA5307713FB086427E43211BB4965F5 /* Pods-PandaFit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit/Pods-PandaFit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PandaFit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		24B033FB36096B1C6B9CD46421859A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C5DBB88D6D80D86A1CF8A9E633C7FF /* Pods-PandaFit WatchKit App.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PandaFit_WatchKit_App;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		266C22ED6655BFC57FF74F5C9CF31633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29EBAC16769DA7ADED96E8A5C0342208 /* Pods-PandaFit WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -663,17 +734,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PandaFit_WatchKit_App;
+				PRODUCT_NAME = Pods_PandaFit_WatchKit_Extension;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -682,6 +753,42 @@
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
+		};
+		397750EFBE4754EA7E59BE2E8F16FC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E418FAE30F0D734DAFB2A7EF914C3EA7 /* Pods-PandaFit WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PandaFit_WatchKit_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
 		};
 		46AB04918043A377316E156A43A782AE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -716,9 +823,9 @@
 			};
 			name = Debug;
 		};
-		5AFB222B3FEB5943E5152AFF32F85465 /* Debug */ = {
+		7835ACCAFA230A44303A1EAAA34D7C96 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAB716E6452B49F8689F34FFEFC945A6 /* Pods-PandaFit WatchKit Extension.debug.xcconfig */;
+			baseConfigurationReference = 58A95E5EB2FA5116C9DDAEA491E29567 /* Pods-PandaFit WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -732,94 +839,23 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PandaFit_WatchKit_Extension;
+				PRODUCT_NAME = Pods_PandaFit_WatchKit_App;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		6F32BF20F93618B99982F5280E4919C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93B202F39E3D6729A3BF6A095430DD85 /* Pods-PandaFit.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit/Pods-PandaFit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PandaFit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6F8001A9F43FC7D87028AD0E6B4D33EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB85FC61A353E1F22DB53A66D4A9FA2 /* Pods-PandaFit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit/Pods-PandaFit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PandaFit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -901,77 +937,41 @@
 			};
 			name = Debug;
 		};
-		898E46B9850C08FB2C93833218899230 /* Release */ = {
+		873BA60A0443F2B2A4CD766780D54199 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8B1CF3D3B1ADE4E5E0A86A9838BCAA0 /* Pods-PandaFit WatchKit Extension.release.xcconfig */;
+			baseConfigurationReference = C4A744C10553B732EAD0D0E45A3290FF /* Pods-PandaFit.debug.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit/Pods-PandaFit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PandaFit_WatchKit_Extension;
-				SDKROOT = watchos;
+				PRODUCT_NAME = Pods_PandaFit;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
-			name = Release;
-		};
-		B7F24544915A66B7671FB650B2C249A5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 921A8247A0242175401E0B47A8D4E8E5 /* Pods-PandaFit WatchKit App.release.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PandaFit_WatchKit_App;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
+			name = Debug;
 		};
 		CC567ECDC72232516177B2E12E8DE9F8 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1081,15 +1081,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		212B8FE72AAFEB62BDDA8748C14B796C /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E9B9CDFF028915170FB91EDE5F12899 /* Debug */,
-				B7F24544915A66B7671FB650B2C249A5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1108,20 +1099,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		872945CD524C7079D7DC76848C3894B3 /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit Extension" */ = {
+		6636ECF6F3CBE126B6702E5BB4EEE078 /* Build configuration list for PBXNativeTarget "Pods-PandaFit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5AFB222B3FEB5943E5152AFF32F85465 /* Debug */,
-				898E46B9850C08FB2C93833218899230 /* Release */,
+				873BA60A0443F2B2A4CD766780D54199 /* Debug */,
+				1466FADDFBC6CD677318DDC71D39FF80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CBE4AEB4FD4A9F63D448DCDE12CD5FC /* Build configuration list for PBXNativeTarget "Pods-PandaFit" */ = {
+		6C5FA4E88FB35D8A635AB9C1316AD0F3 /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F8001A9F43FC7D87028AD0E6B4D33EF /* Debug */,
-				6F32BF20F93618B99982F5280E4919C0 /* Release */,
+				7835ACCAFA230A44303A1EAAA34D7C96 /* Debug */,
+				24B033FB36096B1C6B9CD46421859A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D899D41CF3650F40796F6AD0F8041FAB /* Build configuration list for PBXNativeTarget "Pods-PandaFit WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266C22ED6655BFC57FF74F5C9CF31633 /* Debug */,
+				397750EFBE4754EA7E59BE2E8F16FC34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

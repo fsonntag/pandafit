@@ -20,11 +20,21 @@ class StatusViewController: UIViewController {
                 moodLabel.text = "\(pandaState.mood)".uppercased()
                 scoreLabel.text = pandaState.score.description
                 
-                imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                switch pandaState.mood {
+                case .ecstatic:
+                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                case .happy:
+                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                case .content:
+                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                case .angry:
+                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                case .dying:
+                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                }
                 imageView.animationDuration = 1.0
                 
                 imageView.startAnimating()
-//                image.startAnimatingWithImages(in: NSRange(location:0, length: 2), duration: duration, repeatCount: 0)
             }
         }
     }

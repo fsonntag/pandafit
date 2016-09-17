@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BC472B310DD061D9B24FDDA128E257C"
-               BuildableName = "Pods_PandaFit_WatchKit_Extension.framework"
-               BlueprintName = "Pods-PandaFit WatchKit Extension"
+               BlueprintIdentifier = "651D4EBD3E091963B614593449B4EB71"
+               BuildableName = "Pods_PandaFit_WatchKit_App.framework"
+               BlueprintName = "Pods-PandaFit WatchKit App"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BC472B310DD061D9B24FDDA128E257C"
-            BuildableName = "Pods_PandaFit_WatchKit_Extension.framework"
-            BlueprintName = "Pods-PandaFit WatchKit Extension"
+            BlueprintIdentifier = "651D4EBD3E091963B614593449B4EB71"
+            BuildableName = "Pods_PandaFit_WatchKit_App.framework"
+            BlueprintName = "Pods-PandaFit WatchKit App"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

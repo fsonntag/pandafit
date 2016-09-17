@@ -23,7 +23,19 @@ class StatusInterfaceController: WKInterfaceController {
                 scoreLabel.setText(pandaState.score.description)
                 
                 let duration = 1.5
-                image.setImageNamed("Pika")
+                switch pandaState.mood {
+                case .ecstatic:
+                    image.setImageNamed("Pika")
+                case .happy:
+                    image.setImageNamed("Pika")
+                case .content:
+                    image.setImageNamed("Pika")
+                case .angry:
+                    image.setImageNamed("Pika")
+                case .dying:
+                    image.setImageNamed("Pika")
+                }
+                
                 image.startAnimatingWithImages(in: NSRange(location:0, length: 2), duration: duration, repeatCount: 0)
             }
         }
