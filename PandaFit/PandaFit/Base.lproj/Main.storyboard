@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rNb-lb-Hw1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LevelSelectionViewController-->
+        <scene sceneID="dmC-Xu-1BV">
+            <objects>
+                <viewController storyboardIdentifier="LevelSelectionViewController" title="LevelSelectionViewController" id="rNb-lb-Hw1" customClass="LevelSelectionViewController" customModule="PandaFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MWq-Yr-mX0"/>
+                        <viewControllerLayoutGuide type="bottom" id="2HO-B8-oJX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vcx-OU-ssM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5L-8A-jtl">
+                                <frame key="frameInset" minX="16" minY="28" width="343" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to PandaFit">
+                                        <attributes>
+                                            <font key="NSFont" size="34" name=".SFNSDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTU-qj-Wvj">
+                                <frame key="frameInset" minX="16" minY="541" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Starting Panda"/>
+                                <connections>
+                                    <action selector="startingPandaSelected:" destination="rNb-lb-Hw1" eventType="touchUpInside" id="Vce-ZC-Uob"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oi-ix-K60">
+                                <frame key="frameInset" minX="16" minY="579" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medium Panda"/>
+                                <connections>
+                                    <action selector="mediumPandaSelected:" destination="rNb-lb-Hw1" eventType="touchUpInside" id="fWS-Uh-nas"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf8-eh-8Bv">
+                                <frame key="frameInset" minX="16" minY="617" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Super Panda"/>
+                                <connections>
+                                    <action selector="superPandaSelected:" destination="rNb-lb-Hw1" eventType="touchUpInside" id="elw-tR-zpP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fellow Panda, what's your fitness level? 🐼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7r-1S-mQ8">
+                                <frame key="frameInset" minX="16" minY="94" width="328" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxh-RL-IT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="133.5832083958021"/>
+        </scene>
+        <!--StatusViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="StatusViewController" title="StatusViewController" id="BYZ-38-t0r" customClass="StatusViewController" customModule="PandaFit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pika1" translatesAutoresizingMaskIntoConstraints="NO" id="qPg-Qw-ncC"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panda's mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uG-A5-zjE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="xE0-5R-uTQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blI-aL-mEK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="RpF-kK-Pr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igU-n3-uhU">
+                                <frame key="frameInset" minX="245" minY="587" width="114" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="idK-Fh-18h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Current score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pti-lB-uFo">
+                                <frame key="frameInset" minX="254" minY="548" width="105" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="iCi-cd-IMn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4uG-A5-zjE" firstAttribute="top" secondItem="qPg-Qw-ncC" secondAttribute="bottom" constant="8" id="0lT-Ve-0ti"/>
+                            <constraint firstItem="pti-lB-uFo" firstAttribute="top" secondItem="qPg-Qw-ncC" secondAttribute="bottom" constant="8" id="IiT-j2-gMG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="igU-n3-uhU" secondAttribute="bottom" constant="20" id="MlD-Zw-hdZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="qPg-Qw-ncC" secondAttribute="leading" id="P7f-1x-Lbe"/>
+                            <constraint firstItem="igU-n3-uhU" firstAttribute="top" secondItem="pti-lB-uFo" secondAttribute="bottom" constant="18" id="SHd-jf-qpH"/>
+                            <constraint firstItem="qPg-Qw-ncC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="UgY-ju-C4U"/>
+                            <constraint firstItem="blI-aL-mEK" firstAttribute="top" secondItem="4uG-A5-zjE" secondAttribute="bottom" constant="8" id="WAK-1R-Pq0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4uG-A5-zjE" secondAttribute="leading" id="arL-hD-nii"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qPg-Qw-ncC" secondAttribute="trailing" id="gXP-6y-pXt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="blI-aL-mEK" secondAttribute="bottom" constant="19" id="r4N-TF-cvC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pti-lB-uFo" secondAttribute="trailing" id="tZd-ta-RFm"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="blI-aL-mEK" secondAttribute="leading" id="w6r-jb-5Zg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="igU-n3-uhU" secondAttribute="trailing" id="zTb-hW-sfH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="qPg-Qw-ncC" id="4tp-mu-Cqd"/>
+                        <outlet property="moodLabel" destination="blI-aL-mEK" id="808-XS-ZJ9"/>
+                        <outlet property="scoreLabel" destination="igU-n3-uhU" id="mjU-Ct-kci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pika1" width="544" height="544"/>
+    </resources>
+</document>
