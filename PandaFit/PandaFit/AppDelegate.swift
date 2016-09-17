@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let healthKitManager:PGHealthKitManager = PGHealthKitManager()
+    let networkController:PGNetworkController = PGNetworkController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
@@ -38,15 +39,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.makeKeyAndVisible()
         
-        healthKitManager.retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier.stepCount) { (steps) in
-            print(steps)
-        }
-        healthKitManager.retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning) { (distance) in
-            print(distance)
-        }
-        
-        healthKitManager.retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier.distanceCycling) { (distance) in
-            print(distance)
+        DispatchQueue.global(qos: .background).async {
+            while true {
+                self.retrieveAndPostSteps()
+                sleep(10)
+            }
         }
         
         return true
@@ -85,6 +82,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 }
                 
             }
+        }
+    }
+    
+    func retrieveAndPostSteps() {
+        healthKitManager.retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier.stepCount) { (steps) in
+            print(steps)
+            //            TODO uncomment this
+            //            networkController.postSteps(numberSteps: steps)
         }
     }
 

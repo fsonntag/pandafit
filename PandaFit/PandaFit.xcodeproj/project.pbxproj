@@ -184,12 +184,12 @@
 				DCF881E71D8CE0D0000F9C76 /* PandaFit.entitlements */,
 				DCE9BED91D8CDA9B0074A34F /* ViewControllers */,
 				DC7A29C81D8C944C006D04E4 /* AppDelegate.swift */,
-				DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */,
 				DC7A29CC1D8C944C006D04E4 /* Main.storyboard */,
 				DC7A29CF1D8C944C006D04E4 /* Assets.xcassets */,
 				DC7A29D11D8C944C006D04E4 /* LaunchScreen.storyboard */,
 				DC7A29D41D8C944C006D04E4 /* Info.plist */,
 				DC7A2A031D8C98DD006D04E4 /* PGHealthKitManager.swift */,
+				DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */,
 			);
 			path = PandaFit;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 		DCE9BED91D8CDA9B0074A34F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */,
+				DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */,
 				DCE9BED71D8CD0A00074A34F /* LevelSelectionViewController.swift */,
 			);
 			name = ViewControllers;

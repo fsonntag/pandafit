@@ -43,30 +43,32 @@ class PGHealthKitManager: NSObject {
     func retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier, completion: @escaping (_ stepRetrieved: Double) -> Void) {
         
         let key = "\(quantityTypeIdentifier)"
+
         let lastDate = UserDefaults.standard.value(forKey: key)
-        if lastDate != nil {
-            
+        var startDate: Date? = nil
+        
+        if lastDate! as? Date != nil {
+            startDate = lastDate! as? Date
         } else {
-            UserDefaults.standard.set(Date(), forKey: key)
+            let calendar = Calendar.current
+            startDate = calendar.date(byAdding: .day, value: -365, to: Date())
         }
         
         //   Define the Step Quantity Type
         let stepsCount = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
         
         //   Get the start of the day
-        let calendar = Calendar.current
         let now = Date()
-        
-        
-        let sevenDaysAgo = calendar.date(byAdding: .day, value: -7, to: now)
+//        TODO  should be set to now and not to nil in production
+        UserDefaults.standard.set(nil, forKey: key)
         
         //  Set the Predicates & Interval
-        let predicate = HKQuery.predicateForSamples(withStart: sevenDaysAgo, end: now, options: .strictStartDate)
+        let predicate = HKQuery.predicateForSamples(withStart: startDate!, end: now, options: .strictStartDate)
         let interval: NSDateComponents = NSDateComponents()
-        interval.day = 1
+        interval.day = 365
         
         //  Perform the Query
-        let query = HKStatisticsCollectionQuery(quantityType: stepsCount!, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: sevenDaysAgo!, intervalComponents:interval as DateComponents)
+        let query = HKStatisticsCollectionQuery(quantityType: stepsCount!, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: startDate!, intervalComponents:interval as DateComponents)
         
         query.initialResultsHandler = { query, results, error in
             
@@ -78,7 +80,7 @@ class PGHealthKitManager: NSObject {
             }
             
             if let myResults = results {
-                myResults.enumerateStatistics(from: sevenDaysAgo!, to: Date()) {
+                myResults.enumerateStatistics(from: startDate!, to: Date()) {
                     statistics, stop in
                     
                     if let quantity = statistics.sumQuantity() {
