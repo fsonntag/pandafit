@@ -12,6 +12,7 @@ import Foundation
 
 class StatusInterfaceController: WKInterfaceController {
 
+    @IBOutlet var imageBackgroundGroup: WKInterfaceGroup!
     @IBOutlet var image: WKInterfaceImage!
     @IBOutlet var moodLabel: WKInterfaceLabel!
     @IBOutlet var scoreLabel: WKInterfaceLabel!
@@ -25,15 +26,20 @@ class StatusInterfaceController: WKInterfaceController {
                 let duration = 1.5
                 switch pandaState.mood {
                 case .ecstatic:
-                    image.setImageNamed("Pika")
+                    image.setImageNamed("ecstatic")
+                    imageBackgroundGroup.setBackgroundColor(UIColor.cyan)
                 case .happy:
-                    image.setImageNamed("Pika")
+                    image.setImageNamed("happy")
+                    imageBackgroundGroup.setBackgroundColor(UIColor(red: 150, green: 150, blue: 150, alpha: 1.0))
                 case .content:
-                    image.setImageNamed("Pika")
+                    image.setImageNamed("content")
+                    imageBackgroundGroup.setBackgroundColor(UIColor.cyan)
                 case .angry:
-                    image.setImageNamed("Pika")
+                    image.setImageNamed("angry")
+                    imageBackgroundGroup.setBackgroundColor(UIColor.red)
                 case .dying:
-                    image.setImageNamed("Pika")
+                    image.setImageNamed("dying")
+                    imageBackgroundGroup.setBackgroundColor(UIColor.cyan)
                 }
                 
                 image.startAnimatingWithImages(in: NSRange(location:0, length: 2), duration: duration, repeatCount: 0)
@@ -43,7 +49,7 @@ class StatusInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        self.pandaState = PandaState(score: 50, mood: Mood.happy)
+        self.pandaState = PandaState(score: 50, mood: Mood.ecstatic)
         // Configure interface objects here.
     }
     

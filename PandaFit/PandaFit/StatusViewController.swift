@@ -22,15 +22,15 @@ class StatusViewController: UIViewController {
                 
                 switch pandaState.mood {
                 case .ecstatic:
-                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                    imageView.animationImages = [UIImage(named: "ecstatic1")!, UIImage(named: "ecstatic2")!]
                 case .happy:
-                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                    imageView.animationImages = [UIImage(named: "happy1")!, UIImage(named: "happy2")!]
                 case .content:
-                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                    imageView.animationImages = [UIImage(named: "content1")!, UIImage(named: "content2")!]
                 case .angry:
-                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                    imageView.animationImages = [UIImage(named: "angry1")!, UIImage(named: "angry2")!]
                 case .dying:
-                    imageView.animationImages = [UIImage(named: "Pika1")!, UIImage(named: "Pika2")!]
+                    imageView.animationImages = [UIImage(named: "dying1")!, UIImage(named: "dying2")!]
                 }
                 imageView.animationDuration = 1.0
                 

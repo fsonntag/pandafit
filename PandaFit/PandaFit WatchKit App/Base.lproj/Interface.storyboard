@@ -5,15 +5,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
     </dependencies>
     <scenes>
-        <!--Status-->
+        <!--PandaFit-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Status" title="Status" id="AgC-eL-Hgc" customClass="StatusInterfaceController" customModule="PandaFit_WatchKit_Extension">
+                <controller identifier="Status" title="PandaFit" id="AgC-eL-Hgc" customClass="StatusInterfaceController" customModule="PandaFit_WatchKit_Extension">
                     <items>
                         <group width="1" height="120" alignment="left" id="W5S-A3-lGX">
                             <items>
-                                <imageView width="1" height="1" alignment="left" image="Pika" id="Zh9-eD-PUQ"/>
+                                <imageView width="1" height="1" alignment="left" image="content" id="Zh9-eD-PUQ"/>
                             </items>
+                            <color key="backgroundColor" red="0.47674511441626932" green="0.77523041415026206" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
                         <group width="1" alignment="left" verticalAlignment="bottom" id="RYx-KW-324">
                             <items>
@@ -24,6 +25,7 @@
                     </items>
                     <connections>
                         <outlet property="image" destination="Zh9-eD-PUQ" id="x6v-3Q-5mB"/>
+                        <outlet property="imageBackgroundGroup" destination="W5S-A3-lGX" id="5Lb-QJ-p1w"/>
                         <outlet property="moodLabel" destination="wCy-j4-s8T" id="vt5-Zt-V8f"/>
                         <outlet property="scoreLabel" destination="G4B-1y-4CJ" id="oYh-N5-R3h"/>
                     </connections>
