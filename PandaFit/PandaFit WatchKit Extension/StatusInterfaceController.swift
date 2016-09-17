@@ -20,26 +20,26 @@ class StatusInterfaceController: WKInterfaceController {
     var panda: Panda? {
         didSet {
             if let panda = panda {
-                moodLabel.setText("Panda is \(panda.mood)")
+                moodLabel.setText("\(panda.name) is \(panda.mood)")
                 scoreLabel.setText(panda.score.description)
                 
                 let duration = 1.5
                 switch panda.mood {
                 case .ecstatic:
                     image.setImageNamed("ecstatic")
-                    imageBackgroundGroup.setBackgroundColor(UIColor.cyan)
+                    imageBackgroundGroup.setBackgroundColor(UIColor(red: 0.0, green: 153/255, blue: 1.0, alpha: 1.0))
                 case .happy:
                     image.setImageNamed("happy")
-                    imageBackgroundGroup.setBackgroundColor(UIColor(red: 150, green: 150, blue: 150, alpha: 1.0))
+                    imageBackgroundGroup.setBackgroundColor(UIColor(red: 0.0, green: 153/255, blue: 1.0, alpha: 1.0))
                 case .content:
                     image.setImageNamed("content")
-                    imageBackgroundGroup.setBackgroundColor(UIColor.cyan)
+                    imageBackgroundGroup.setBackgroundColor(UIColor.blue)
                 case .angry:
                     image.setImageNamed("angry")
-                    imageBackgroundGroup.setBackgroundColor(UIColor.red)
+                    imageBackgroundGroup.setBackgroundColor(UIColor(red: 1.0, green: 102/255, blue: 0.0, alpha: 1.0))
                 case .dying:
                     image.setImageNamed("dying")
-                    imageBackgroundGroup.setBackgroundColor(UIColor.cyan)
+                    imageBackgroundGroup.setBackgroundColor(UIColor(red: 102/255, green: 0.0, blue: 0.0, alpha: 1.0))
                 }
                 
                 image.startAnimatingWithImages(in: NSRange(location:0, length: 2), duration: duration, repeatCount: 0)
@@ -49,7 +49,7 @@ class StatusInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        self.panda = Panda(name: "Felix", score: 50, mood: Mood.ecstatic)
+        self.panda = Panda(name: "Felix", score: 50, mood: Mood.angry)
         // Configure interface objects here.
     }
     
