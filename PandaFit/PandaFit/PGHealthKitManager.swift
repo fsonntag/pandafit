@@ -44,11 +44,11 @@ class PGHealthKitManager: NSObject {
         
         let key = "\(quantityTypeIdentifier)"
 
-        let lastDate = UserDefaults.standard.value(forKey: key)
+        let lastDate: Any? = UserDefaults.standard.value(forKey: key)
         var startDate: Date? = nil
         
-        if lastDate! as? Date != nil {
-            startDate = lastDate! as? Date
+        if (lastDate as? Date?) != nil {
+            startDate = lastDate as! Date?
         } else {
             let calendar = Calendar.current
             startDate = calendar.date(byAdding: .day, value: -365, to: Date())
