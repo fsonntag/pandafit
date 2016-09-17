@@ -26,21 +26,8 @@ class Panda: NSObject, NSCoding {
     init(name: String, score: Int) {
         self.name = name
         self.score = score
-        switch score {
-        case let x where x < 20:
-            self.mood = .dying
-        case let x where x < 40:
-            self.mood = .angry
-        case let x where x < 60:
-            self.mood = .content
-        case let x where x < 80:
-            self.mood = .happy
-        case let x where x >= 80:
-            self.mood = .ecstatic
-        default:
-            print("Warning: couldn't get a valid value for the score: \(score)")
-            self.mood = .content
-        }
+        self.mood = Panda.moodForScore(score: score)
+        
     }
     
     init(name: String, score: Int, mood: Mood) {
@@ -64,4 +51,24 @@ class Panda: NSObject, NSCoding {
         
     }
 
+    class func moodForScore(score: Int) -> Mood {
+        var mood: Mood? = nil
+        switch score {
+        case let x where x < 20:
+            mood = .dying
+        case let x where x < 40:
+            mood = .angry
+        case let x where x < 60:
+            mood = .content
+        case let x where x < 80:
+            mood = .happy
+        case let x where x >= 80:
+            mood = .ecstatic
+        default:
+            print("Warning: couldn't get a valid value for the score: \(score)")
+            mood = .content
+        }
+        return mood!
+    }
+    
 }

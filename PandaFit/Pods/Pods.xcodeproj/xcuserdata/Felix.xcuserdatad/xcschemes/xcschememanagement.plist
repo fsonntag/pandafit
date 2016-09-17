@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
+		<key>Alamofire-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>AlamofireImage.xcscheme</key>
+		<key>Alamofire-watchOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,12 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>333E47F1004946B94926B19979768D18</key>
+		<key>063E3C59C1B7382B70A98D5EF8052B8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>486E4D781E0CBBD27CC1BE4C58264F04</key>
+		<key>1652A3CBDE357A35694CC75654385FCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +47,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<key>89C69EB624EC8137588D9568F2E11964</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87132FF5DEDEC9EF2244BCACE948A8D9</key>
+		<key>D75ABDE8C1B5794F3EBFE91395AFD2D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

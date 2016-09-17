@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class PGNetworkController: NSObject {        
+class PFWatchNetworkController: NSObject {
     
     let baseUrl = "http://ec2-52-39-53-104.us-west-2.compute.amazonaws.com/"
     
@@ -23,14 +23,14 @@ class PGNetworkController: NSObject {
                     let panda = Panda(name: name, score: dict.value(forKey: "score") as! Int)
                     completion(panda)
                 }
-
+                
             case .failure:
                 print("Request failed")
                 
             }
         }
     }
-
+    
     func postSteps(name: String, numberSteps: Int) {
         let parameters: Parameters = [
             "steps": numberSteps

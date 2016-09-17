@@ -12,6 +12,8 @@ class LevelSelectionViewController: UIViewController {
 
     let infoMessage = "Your panda is in content mood at the moment. Walk a little to make him happy and preserve him from dying. 🐼"
     
+    @IBOutlet weak var nameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,40 +36,64 @@ class LevelSelectionViewController: UIViewController {
     }
     */
     @IBAction func startingPandaSelected(_ sender: AnyObject) {
-        let alertController = UIAlertController(title: "Starting Panda", message:
-            self.infoMessage, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Alright!", style: .default) { (action) in
-            let statusViewController = self.storyboard?.instantiateViewController(withIdentifier: "StatusViewController") as! StatusViewController
-            UserDefaults.standard.set("StartingPanda", forKey: "level")
-            self.present(statusViewController, animated: true, completion: nil)
-        })        
         
-        self.present(alertController, animated: true, completion: nil)
+        if let name = nameTextField.text {
+            if name == "" {
+                let alertController = self.createNoNameAlertController()
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                let alertController = self.createConfirmationAlertController(level: "StartingPanda")
+                UserDefaults.standard.set(name, forKey: "name")
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
     }
 
     @IBAction func mediumPandaSelected(_ sender: AnyObject) {
-        let alertController = UIAlertController(title: "Medium Panda", message:
-            self.infoMessage, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "Alright!", style: .default) { (action) in
-            let statusViewController = self.storyboard?.instantiateViewController(withIdentifier: "StatusViewController") as! StatusViewController
-            UserDefaults.standard.set("MediumPanda", forKey: "level")
-            self.present(statusViewController, animated: true, completion: nil)
-        })
         
-        self.present(alertController, animated: true, completion: nil)
-        
+        if let name = nameTextField.text {
+            if name == "" {
+                let alertController = self.createNoNameAlertController()
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                let alertController = self.createConfirmationAlertController(level: "MediumPanda")
+                UserDefaults.standard.set(name, forKey: "name")
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func superPandaSelected(_ sender: AnyObject) {
+        
+        if let name = nameTextField.text {
+            if name == "" {
+                let alertController = self.createNoNameAlertController()
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                let alertController = self.createConfirmationAlertController(level: "SuperPanda")
+                UserDefaults.standard.set(name, forKey: "name")
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    func createNoNameAlertController() -> UIAlertController {
+        let alertController = UIAlertController(title: "No Name Entered", message:"Please enter a name for your panda", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Alright!", style: .default))
+        return alertController
+    }
+    
+    func createConfirmationAlertController(level: String) -> UIAlertController {
+        
         let alertController = UIAlertController(title: "Super Panda", message:
             self.infoMessage, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Alright!", style: .default) { (action) in
             let statusViewController = self.storyboard?.instantiateViewController(withIdentifier: "StatusViewController") as! StatusViewController
-            UserDefaults.standard.set("SuperPanda", forKey: "level")
+            UserDefaults.standard.set(level, forKey: "level")
             self.present(statusViewController, animated: true, completion: nil)
         })
+        return alertController
         
-        self.present(alertController, animated: true, completion: nil)
     }
     
     

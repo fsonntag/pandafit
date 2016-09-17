@@ -13,12 +13,16 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var nameMoodLabel: UILabel!
+    
+    let networkController = PGNetworkController()
 
     var panda: Panda? {
         didSet {
             if let panda = panda {
                 moodLabel.text = "\(panda.mood)".uppercased()
                 scoreLabel.text = panda.score.description
+                nameMoodLabel.text = "\(panda.name)'s Mood"
                 
                 switch panda.mood {
                 case .ecstatic:
@@ -41,8 +45,24 @@ class StatusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.panda = Panda(name: "Felix", score: 50, mood: Mood.happy)
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        DispatchQueue.global(qos: .background).async {
+            while true {
+                if let name = UserDefaults.standard.value(forKey: "name") as? String {
+                    self.networkController.getPandaState(name: name, completion: { (newPanda) in
+                        self.panda = newPanda
+                    })
+                }
+                sleep(10)
+            }
+        }
+    }
+    
+    func updateViews(score: Int) {
+        if let panda = panda {
+            panda.score = score
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

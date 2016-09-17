@@ -12,6 +12,7 @@ import HealthKit
 class PGHealthKitManager: NSObject {
     
     let healthKitStore:HKHealthStore = HKHealthStore()
+    var authorized = false
     
     func authorizeHealthKit(completion: ((_ success:Bool, _ error:NSError?) -> Void)!) {
         // 1. Set the types you want to read from HK Store
@@ -34,6 +35,7 @@ class PGHealthKitManager: NSObject {
         
         healthKitStore.requestAuthorization(toShare: Set(), read: healthKitTypesToRead) { (success, error) in
             if (completion != nil) {
+                self.authorized = success
                 completion!(success, error as NSError?)
             }
         }
@@ -42,60 +44,70 @@ class PGHealthKitManager: NSObject {
     
     func retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier, completion: @escaping (_ stepRetrieved: Double) -> Void) {
         
-        let key = "\(quantityTypeIdentifier)"
-
-        let lastDate: Any? = UserDefaults.standard.value(forKey: key)
-        var startDate: Date? = nil
-        
-        if (lastDate as? Date?) != nil {
-            startDate = lastDate as! Date?
-        } else {
-            let calendar = Calendar.current
-            startDate = calendar.date(byAdding: .day, value: -365, to: Date())
-        }
-        
-        //   Define the Step Quantity Type
-        let stepsCount = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
-        
-        //   Get the start of the day
-        let now = Date()
-//        TODO  should be set to now and not to nil in production
-        UserDefaults.standard.set(nil, forKey: key)
-        
-        //  Set the Predicates & Interval
-        let predicate = HKQuery.predicateForSamples(withStart: startDate!, end: now, options: .strictStartDate)
-        let interval: NSDateComponents = NSDateComponents()
-        interval.day = 365
-        
-        //  Perform the Query
-        let query = HKStatisticsCollectionQuery(quantityType: stepsCount!, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: startDate!, intervalComponents:interval as DateComponents)
-        
-        query.initialResultsHandler = { query, results, error in
+        if self.authorized == true {
+            let key = "\(quantityTypeIdentifier)"
             
-            if error != nil {
+            var startDate: Date? = nil
+            
+            if let lastDate = UserDefaults.standard.value(forKey: key) as? Date {
                 
-                print("Couldn't retrieve steps")
-                print(error)
-                return
+                startDate = lastDate
+                
+            } else {
+                let calendar = Calendar.current
+                startDate = calendar.date(byAdding: .day, value: -365, to: Date())
             }
             
-            if let myResults = results {
-                myResults.enumerateStatistics(from: startDate!, to: Date()) {
-                    statistics, stop in
+            //   Define the Step Quantity Type
+            let stepsCount = HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
+            
+            //   Get the start of the day
+            let now = Date()
+            //        TODO  should be set to now and not to nil in production
+//            UserDefaults.standard.set(nil, forKey: key)
+            UserDefaults.standard.set(now, forKey: key)
+            
+            //  Set the Predicates & Interval
+            let predicate = HKQuery.predicateForSamples(withStart: startDate!, end: now, options: .strictStartDate)
+            let interval: NSDateComponents = NSDateComponents()
+            interval.day = 365
+            
+            //  Perform the Query
+            let query = HKStatisticsCollectionQuery(quantityType: stepsCount!, quantitySamplePredicate: predicate, options: [.cumulativeSum], anchorDate: startDate!, intervalComponents:interval as DateComponents)
+            
+            query.initialResultsHandler = { query, results, error in
+                
+                if error != nil {
                     
-                    if let quantity = statistics.sumQuantity() {
+                    print("Couldn't retrieve steps")
+                    print(error)
+                    return
+                }
+                
+                if let myResults = results {
+                    myResults.enumerateStatistics(from: startDate!, to: Date()) {
+                        statistics, stop in
                         
-                        let quantity = quantity.doubleValue(for: HKUnit.count())
-                        
-                        print("Quantity = \(quantity)")
-                        completion(quantity)
-                        
+                        if let quantity = statistics.sumQuantity() {
+                            
+                            let quantity = quantity.doubleValue(for: HKUnit.count())
+                            
+                            print("Quantity = \(quantity)")
+                            completion(quantity)
+                            
+                        }
                     }
                 }
             }
+            
+            healthKitStore.execute(query)
+        
+        
+        } else {
+            print("HealthKit not authorized")
         }
         
-        healthKitStore.execute(query)
+        
     }
 
 }

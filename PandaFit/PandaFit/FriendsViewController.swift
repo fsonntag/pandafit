@@ -16,15 +16,32 @@ class FriendsViewController: UIViewController {
     let networkController = PGNetworkController()
 
     var friends: Array<Panda> = Array()
+    var dataFilePath: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let directionPaths =
+            NSSearchPathForDirectoriesInDomains(.documentDirectory,
+                                                .userDomainMask, true)
+        
+        let documentsDirectory = directionPaths[0]
+        dataFilePath =
+            documentsDirectory.stringByAppendingPathComponent(pathComponent: "data.archive")
+        
         self.nameTextField.delegate = self
         self.friendsTableView.delegate = self
         self.friendsTableView.dataSource = self
+        self.friends = self.loadFriends()
+
         
-        self.friends = loadFriends()
-        self.friendsTableView.reloadData()
+        DispatchQueue.global(qos: .background).async {
+            while true {
+                self.refreshFriends()
+                self.friendsTableView.reloadData()
+                sleep(10)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,9 +58,10 @@ class FriendsViewController: UIViewController {
                 self.present(alertController, animated: true, completion: nil)
                 return
             }
-            let newFriend = networkController.getPandaState(name: name)
-            self.addOrUpdatePanda(newPanda: newFriend)
-            nameTextField.text = ""            
+            networkController.getPandaState(name: name, completion: { (newPanda) in
+                self.addOrUpdatePanda(newPanda: newPanda)
+                self.nameTextField.text = ""
+            })
         }
     }
 
@@ -58,8 +76,19 @@ class FriendsViewController: UIViewController {
     */
     
     func loadFriends() -> Array<Panda> {
+        guard let pandas = NSKeyedUnarchiver.unarchiveObject(withFile: self.dataFilePath!) as? Array<Panda> else { return Array() }
+        return pandas.sorted { (panda1, panda2) -> Bool in
+            panda1.score > panda2.score
+        }
+    }
+    
+    func refreshFriends() -> Void {
+        for panda in self.friends{
+            networkController.getPandaState(name: panda.name, completion: { (newPanda) in
+                self.addOrUpdatePanda(newPanda: newPanda)
+            })
+        }
         
-        return Array()
     }
     
     func addOrUpdatePanda(newPanda: Panda) -> Void {
@@ -74,6 +103,12 @@ class FriendsViewController: UIViewController {
         if !contained {
             self.friends.append(newPanda)
         }
+        
+        self.friends.sort { (panda1, panda2) -> Bool in
+            panda1.score > panda2.score
+        }
+        
+        NSKeyedArchiver.archiveRootObject(self.friends, toFile: self.dataFilePath!)
         
         self.friendsTableView.reloadData()
     }
@@ -118,11 +153,11 @@ extension FriendsViewController: UITableViewDataSource, UITableViewDelegate {
         case .ecstatic:
             cell.stateImageView.image = UIImage(named: "ecstatic1")
         case .happy:
-            cell.stateImageView.image = UIImage(named: "ecstatic2")
+            cell.stateImageView.image = UIImage(named: "happy2")
         case .content:
-            cell.stateImageView.image = UIImage(named: "ecstatic1")
+            cell.stateImageView.image = UIImage(named: "content1")
         case .angry:
-            cell.stateImageView.image = UIImage(named: "ecstatic2")
+            cell.stateImageView.image = UIImage(named: "angry2")
         case .dying:
             cell.stateImageView.image = UIImage(named: "dying1")
         }
@@ -176,7 +211,11 @@ extension FriendsViewController: UITableViewDataSource, UITableViewDelegate {
      }
      */
     
+}
 
-
+extension String {
+    func stringByAppendingPathComponent(pathComponent: String) -> String {
+        return (self as NSString).appendingPathComponent(pathComponent)
+    }
 }
 

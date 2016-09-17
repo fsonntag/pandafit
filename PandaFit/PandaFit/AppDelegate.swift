@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = initialViewController
 
         } else {
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LevelSelectionViewController")
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController")
             self.window?.rootViewController = initialViewController
 
         }
@@ -86,11 +86,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func retrieveAndPostSteps() {
-        healthKitManager.retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier.stepCount) { (steps) in
-            print(steps)
-            //            TODO uncomment this
-            //            networkController.postSteps(numberSteps: steps)
+        if let name = UserDefaults.standard.value(forKey: "name") as? String {
+            healthKitManager.retrieve(quantityTypeIdentifier: HKQuantityTypeIdentifier.stepCount) { (steps) in
+                print(steps)
+                self.networkController.postSteps(name: name, numberSteps: Int(steps))
+            }
+        } else {
+            print("Can't post steps, name not set")
         }
+        
     }
 
 

@@ -17,6 +17,8 @@ class StatusInterfaceController: WKInterfaceController {
     @IBOutlet var moodLabel: WKInterfaceLabel!
     @IBOutlet var scoreLabel: WKInterfaceLabel!
     
+    let networkController: PGNetworkController = PGNetworkController()
+    
     var panda: Panda? {
         didSet {
             if let panda = panda {
@@ -49,8 +51,22 @@ class StatusInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        self.panda = Panda(name: "Felix", score: 50, mood: Mood.angry)
-        // Configure interface objects here.
+        DispatchQueue.global(qos: .background).async {
+            while true {
+                if let name = UserDefaults.standard.value(forKey: "name") as? String {
+                    self.networkController.getPandaState(name: name, completion: { (newPanda) in
+                        self.panda = newPanda
+                    })
+                } else {
+                    print("Watch couldn't get name, set name to 'Felix'")
+                    let name = "Felix"
+                    self.networkController.getPandaState(name: name, completion: { (newPanda) in
+                        self.panda = newPanda
+                    })
+                }
+                sleep(10)
+            }
+        }
     }
     
     override func willActivate() {
