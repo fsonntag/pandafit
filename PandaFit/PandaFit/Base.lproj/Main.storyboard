@@ -270,6 +270,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fnM-GW-B51" id="Wd4-O8-gjg"/>
+                                    <outlet property="delegate" destination="fnM-GW-B51" id="38N-BV-XFz"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Friend's Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cSV-PM-em5">
                                 <frame key="frameInset" minX="16" minY="579" width="343" height="30"/>
@@ -296,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXd-AG-bH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-792" y="945"/>
+            <point key="canvasLocation" x="-401" y="945"/>
         </scene>
     </scenes>
     <resources>

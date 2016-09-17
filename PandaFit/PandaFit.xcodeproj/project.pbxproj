@@ -12,7 +12,6 @@
 		5C4B9AF71A85B0774E69A8E5 /* Pods_PandaFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB2AAA63B00A83D8CB4099D /* Pods_PandaFit.framework */; };
 		DC064B371D8D5C8F0040BFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC064B361D8D5C8F0040BFDF /* Assets.xcassets */; };
 		DC0A076A1D8D6C9E0008E284 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A07691D8D6C9E0008E284 /* FriendsViewController.swift */; };
-		DC0A076C1D8D6CB70008E284 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A076B1D8D6CB70008E284 /* FriendsTableViewController.swift */; };
 		DC0A076E1D8D6CCD0008E284 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A076D1D8D6CCD0008E284 /* FriendTableViewCell.swift */; };
 		DC5C3B7D1D8D44B0003349E8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */; };
 		DC7A29C91D8C944C006D04E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A29C81D8C944C006D04E4 /* AppDelegate.swift */; };
@@ -90,7 +89,6 @@
 		D7E423A337E377C69AE33C70 /* Pods-PandaFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit/Pods-PandaFit.debug.xcconfig"; sourceTree = "<group>"; };
 		DC064B361D8D5C8F0040BFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC0A07691D8D6C9E0008E284 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
-		DC0A076B1D8D6CB70008E284 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		DC0A076D1D8D6CCD0008E284 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		DC7A29C51D8C944C006D04E4 /* PandaFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,7 +255,6 @@
 				DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */,
 				DCE9BED71D8CD0A00074A34F /* LevelSelectionViewController.swift */,
 				DC0A07691D8D6C9E0008E284 /* FriendsViewController.swift */,
-				DC0A076B1D8D6CB70008E284 /* FriendsTableViewController.swift */,
 				DC0A076D1D8D6CCD0008E284 /* FriendTableViewCell.swift */,
 			);
 			name = ViewControllers;
@@ -547,7 +544,6 @@
 				DC0A076E1D8D6CCD0008E284 /* FriendTableViewCell.swift in Sources */,
 				DCE9BED81D8CD0A00074A34F /* LevelSelectionViewController.swift in Sources */,
 				DC7A2A041D8C98DE006D04E4 /* PGHealthKitManager.swift in Sources */,
-				DC0A076C1D8D6CB70008E284 /* FriendsTableViewController.swift in Sources */,
 				DC7A29CB1D8C944C006D04E4 /* StatusViewController.swift in Sources */,
 				DC7A29C91D8C944C006D04E4 /* AppDelegate.swift in Sources */,
 				DC0A076A1D8D6C9E0008E284 /* FriendsViewController.swift in Sources */,

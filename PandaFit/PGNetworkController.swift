@@ -13,15 +13,15 @@ class PGNetworkController: NSObject {
     
     func getPandaState(name: String) -> Panda {
 //        TODO update URL and parsing
-        Alamofire.request("localhost:7000/getCurrentStatus").responseJSON { response in
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data
-            print(response.result)   // result of response serialization
-            
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
-            }
-        }
+//        Alamofire.request("localhost:7000/getCurrentStatus").responseJSON { response in
+//            print(response.response) // HTTP URL response
+//            print(response.data)     // server data
+//            print(response.result)   // result of response serialization
+//            
+//            if let JSON = response.result.value {
+//                print("JSON: \(JSON)")
+//            }
+//        }
         return Panda(name: name, score: 50)
     }
 
@@ -29,9 +29,10 @@ class PGNetworkController: NSObject {
         let parameters: Parameters = [
             "numSteps": numberSteps
         ]
-        Alamofire.request("localhost:7000/postNewSteps", method: .post, parameters: parameters, encoding: JSONEncoding.default).response { (response) in
-            print(response.response) // HTTP URL response
-            print(response.data)     // server data            
-        }
+        print(parameters)
+//        Alamofire.request("localhost:7000/postNewSteps", method: .post, parameters: parameters, encoding: JSONEncoding.default).response { (response) in
+//            print(response.response) // HTTP URL response
+//            print(response.data)     // server data            
+//        }
     }
 }

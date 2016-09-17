@@ -50,12 +50,12 @@ class Panda: NSObject, NSCoding {
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
-        guard let name = aDecoder.decodeObject(forKey: "name") as? String,
-            let score = aDecoder.decodeObject(forKey: "score") as? Int
+        let score = aDecoder.decodeInt32(forKey: "score")
+        guard let name = aDecoder.decodeObject(forKey: "name") as? String
         else {
             return nil
         }
-        self.init(name:name, score: score)
+        self.init(name:name, score: Int(score))
     }
     
     func encode(with aCoder: NSCoder) {
