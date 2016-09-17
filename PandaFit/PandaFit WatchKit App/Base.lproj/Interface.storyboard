@@ -13,16 +13,16 @@
                     <items>
                         <group width="1" height="150" alignment="left" id="W5S-A3-lGX">
                             <items>
-                                <imageView width="1" height="120" alignment="left" image="content" contentMode="scaleAspectFit" id="Zh9-eD-PUQ">
-                                    <variation key="device=watch42mm" contentMode="scaleAspectFit" height="150" image="content" widthAdjustment="0.0"/>
+                                <imageView width="1" height="120" alignment="left" image="content1" contentMode="scaleAspectFit" id="Zh9-eD-PUQ">
+                                    <variation key="device=watch42mm" contentMode="scaleAspectFit" height="150" image="content1" widthAdjustment="0.0"/>
                                 </imageView>
                             </items>
                             <color key="backgroundColor" red="0.47674511441626932" green="0.77523041415026206" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </group>
                         <group width="1" height="20" alignment="left" verticalAlignment="bottom" id="RYx-KW-324">
                             <items>
-                                <label alignment="left" text="Happy" id="wCy-j4-s8T"/>
-                                <label alignment="right" text="70" id="G4B-1y-4CJ"/>
+                                <label alignment="left" text="Loading..." id="wCy-j4-s8T"/>
+                                <label alignment="right" text="-" id="G4B-1y-4CJ"/>
                             </items>
                         </group>
                     </items>

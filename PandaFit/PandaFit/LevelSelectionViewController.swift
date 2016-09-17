@@ -16,7 +16,7 @@ class LevelSelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.nameTextField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -95,6 +95,15 @@ class LevelSelectionViewController: UIViewController {
         return alertController
         
     }
+}
+
+extension LevelSelectionViewController: UITextFieldDelegate {
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nameTextField {
+            textField.resignFirstResponder()
+            return false
+        }
+        return true
+    }
 }

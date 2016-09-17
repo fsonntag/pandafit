@@ -7,8 +7,8 @@
 //
 
 import WatchKit
+import WatchConnectivity
 import Foundation
-
 
 class StatusInterfaceController: WKInterfaceController {
 
@@ -18,6 +18,17 @@ class StatusInterfaceController: WKInterfaceController {
     @IBOutlet var scoreLabel: WKInterfaceLabel!
     
     let networkController: PGNetworkController = PGNetworkController()
+    
+    var name: String? = nil
+    
+    var session: WCSession? {
+        didSet {
+            if let session = session {
+                session.delegate = self
+                session.activate()
+            }
+        }
+    }
     
     var panda: Panda? {
         didSet {
@@ -51,18 +62,32 @@ class StatusInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        self.session = WCSession.default()
+        self.session?.activate()
+        
         DispatchQueue.global(qos: .background).async {
             while true {
-                if let name = UserDefaults.standard.value(forKey: "name") as? String {
+                self.session?.sendMessage(["user" : ""], replyHandler: { (response) in
+                    if let name = response["name"] as? String {
+                        print("Got name: \(name)")
+                        self.name = name
+                    }
+                    
+                }) { (error) in
+                    print("Error getting user from iPhone: \(error)")
+                }
+                
+                if let name = self.name {
                     self.networkController.getPandaState(name: name, completion: { (newPanda) in
                         self.panda = newPanda
                     })
                 } else {
-                    print("Watch couldn't get name, set name to 'Felix'")
-                    let name = "Felix"
-                    self.networkController.getPandaState(name: name, completion: { (newPanda) in
-                        self.panda = newPanda
-                    })
+//                    TODO uncomment this for demo maybe
+//                    print("Watch couldn't get name, set name to 'Felix'")
+//                    let name = "Felix"
+//                    self.networkController.getPandaState(name: name, completion: { (newPanda) in
+//                        self.panda = newPanda
+//                    })
                 }
                 sleep(10)
             }
@@ -79,4 +104,13 @@ class StatusInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+}
+
+extension StatusInterfaceController: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if let error = error {
+            print("Session activcation failed with error: \(error.localizedDescription)")
+            return
+        }
+    }
 }
