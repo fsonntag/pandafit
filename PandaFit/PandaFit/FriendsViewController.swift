@@ -39,7 +39,7 @@ class FriendsViewController: UIViewController {
             while true {
                 self.refreshFriends()
                 self.friendsTableView.reloadData()
-                sleep(10)
+                sleep(5)
             }
         }
     }

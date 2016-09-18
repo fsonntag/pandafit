@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let healthKitManager:PGHealthKitManager = PGHealthKitManager()
     let networkController:PGNetworkController = PGNetworkController()
+    let demo = true
     
     var session: WCSession? {
         didSet {
@@ -37,6 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         authorizeHealthKit()
         
         let level = UserDefaults.standard.value(forKey: "level")
+        UserDefaults.standard.set(demo, forKey: "demo")
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
@@ -57,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DispatchQueue.global(qos: .background).async {
             while true {
                 self.retrieveAndPostSteps()
-                sleep(10)
+                sleep(5)
             }
         }
         

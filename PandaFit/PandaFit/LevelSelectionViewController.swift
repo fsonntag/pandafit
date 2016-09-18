@@ -88,7 +88,7 @@ class LevelSelectionViewController: UIViewController {
         let alertController = UIAlertController(title: "Super Panda", message:
             self.infoMessage, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Alright!", style: .default) { (action) in
-            let statusViewController = self.storyboard?.instantiateViewController(withIdentifier: "StatusViewController") as! StatusViewController
+            let statusViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
             UserDefaults.standard.set(level, forKey: "level")
             self.present(statusViewController, animated: true, completion: nil)
         })

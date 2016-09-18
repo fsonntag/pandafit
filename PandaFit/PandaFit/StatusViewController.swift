@@ -14,6 +14,8 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var moodLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var nameMoodLabel: UILabel!
+    @IBOutlet weak var sendStepButton: UIButton!
+    @IBOutlet weak var sendPhilippStepButton: UIButton!
     
     let networkController = PGNetworkController()
 
@@ -46,6 +48,14 @@ class StatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if let demo = UserDefaults.standard.value(forKey: "demo") as? Bool {
+            if demo == true {
+                self.sendStepButton.isEnabled = true
+            } else {
+                self.sendStepButton.isEnabled = false
+            }
+        }
+        
         DispatchQueue.global(qos: .background).async {
             while true {
                 if let name = UserDefaults.standard.value(forKey: "name") as? String {
@@ -53,7 +63,7 @@ class StatusViewController: UIViewController {
                         self.panda = newPanda
                     })
                 }
-                sleep(10)
+                sleep(5)
             }
         }
     }
@@ -63,6 +73,14 @@ class StatusViewController: UIViewController {
             panda.score = score
             
         }
+    }
+    
+    @IBAction func sendHiddenStep(_ sender: AnyObject) {
+        self.networkController.postSteps(name: (self.panda?.name)!, numberSteps: 50)
+    }
+    
+    @IBAction func sendHiddenPhilippStep(_ sender: AnyObject) {
+        self.networkController.postSteps(name: "Philipp", numberSteps: 50)
     }
 
     override func didReceiveMemoryWarning() {

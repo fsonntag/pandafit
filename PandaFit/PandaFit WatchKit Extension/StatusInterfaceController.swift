@@ -89,7 +89,7 @@ class StatusInterfaceController: WKInterfaceController {
 //                        self.panda = newPanda
 //                    })
                 }
-                sleep(10)
+                sleep(5)
             }
         }
     }
