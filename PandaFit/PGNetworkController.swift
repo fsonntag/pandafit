@@ -33,7 +33,7 @@ class PGNetworkController: NSObject {
 
     func postSteps(name: String, numberSteps: Int) {
         let parameters: Parameters = [
-            "steps": numberSteps
+            "numSteps": numberSteps
         ]
         print(parameters)
         Alamofire.request("\(baseUrl)steps/\(name)", method: .post, parameters: parameters, encoding: JSONEncoding.default).response { (response) in

@@ -65,9 +65,10 @@ class PGHealthKitManager: NSObject {
             let now = Date()
             //        TODO  should be set to now and not to nil in production
 //            UserDefaults.standard.set(nil, forKey: key)
-            UserDefaults.standard.set(now, forKey: key)
+            
             
             //  Set the Predicates & Interval
+            print("Getting steps between \(startDate!) and \(now)")
             let predicate = HKQuery.predicateForSamples(withStart: startDate!, end: now, options: .strictStartDate)
             let interval: NSDateComponents = NSDateComponents()
             interval.day = 365
@@ -85,18 +86,24 @@ class PGHealthKitManager: NSObject {
                 }
                 
                 if let myResults = results {
-                    myResults.enumerateStatistics(from: startDate!, to: Date()) {
+                    myResults.enumerateStatistics(from: startDate!, to: now) {
                         statistics, stop in
                         
                         if let quantity = statistics.sumQuantity() {
+                            UserDefaults.standard.set(now, forKey: key)
                             
                             let quantity = quantity.doubleValue(for: HKUnit.count())
                             
                             print("Quantity = \(quantity)")
                             completion(quantity)
-                            
+                        } else {
+                            print("Couldn't get quantity")
                         }
+                        
                     }
+                } else {
+//                    no results
+                    print("No results for getting steps")
                 }
             }
             
